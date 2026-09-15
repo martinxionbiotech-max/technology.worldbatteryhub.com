@@ -1,0 +1,91 @@
+---
+const SITE = 'https://technology.worldbatteryhub.com';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lithium Cathode &amp; Anode | World Battery Hub</title>
+    <meta name="description" content="The cathode (LFP, NMC, NCA) sets a lithium cell's voltage and chemistry; the anode (graphite, silicon) stores lithium ions. How the two electrodes define the cell." />
+    <link rel="canonical" href={`${SITE}/lithium-cathode-anode/`} />
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 0; color: #1e293b; line-height: 1.6; }
+      .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+      h1, h2 { color: #0f1f3d; }
+      a { color: #1d4ed8; }
+      .muted { color: #64748b; font-size: 0.85rem; }
+      .box { background: #eff6ff; border-left: 4px solid #1d4ed8; padding: 12px 16px; margin: 14px 0; }
+      table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+      th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #e5e9f0; }
+      th { color: #0f1f3d; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Lithium Cathode &amp; Anode</h1>
+      <p class="muted">Battery Technology Reference · Last reviewed 2026-09-15</p>
+
+      <div class="box">
+        <strong>Direct answer:</strong> A lithium cell has two electrodes. The <strong>cathode</strong> (positive) is a
+        lithium-metal-oxide that <strong>sets the cell's voltage and chemistry</strong> — LFP, NMC or NCA. The
+        <strong>anode</strong> (negative) is usually <strong>graphite</strong>, which stores lithium ions between its
+        layers, with silicon as an emerging higher-capacity alternative. The cathode is the main lever on energy
+        density and safety.
+      </div>
+
+      <h2>Cathode chemistries</h2>
+      <table>
+        <thead><tr><th>Cathode</th><th>Nominal voltage</th><th>Character</th></tr></thead>
+        <tbody>
+          <tr><td><strong>LFP</strong> (lithium iron phosphate)</td><td>~3.2 V</td><td>Safe, long cycle life, lower energy density</td></tr>
+          <tr><td><strong>NMC</strong> (nickel-manganese-cobalt)</td><td>~3.7 V</td><td>Higher energy density, more expensive</td></tr>
+          <tr><td><strong>NCA</strong> (nickel-cobalt-aluminium)</td><td>~3.6 V</td><td>High energy, mainly automotive</td></tr>
+        </tbody>
+      </table>
+      <p>
+        The cathode is where the chemistry lives — see
+        <a href="https://worldbatteryhub.com/lithium/lfp-vs-nmc-vs-lto/">LFP vs NMC</a> for the full trade-off.
+        The cathode also determines the cell's thermal stability: LFP holds its oxygen more tightly, which is why it
+        is safer than NMC.
+      </p>
+
+      <h2>The anode: graphite and beyond</h2>
+      <p>
+        The anode stores lithium ions during charge and releases them during discharge. <strong>Graphite</strong> is the
+        standard because it is cheap, stable and well-understood. <strong>Silicon</strong> stores far more lithium per
+        gram (raising energy density) but swells dramatically on charge, which shortens life — so it is used as an
+        additive to graphite rather than alone. LTO (lithium titanate) is a niche anode for ultra-fast charge and
+        extreme cycle life.
+      </p>
+
+      <h2>Why the cathode matters most</h2>
+      <p>
+        The cathode is the biggest lever on a lithium cell because it sets the voltage, the energy density and the
+        safety behaviour. Two cells with the same graphite anode but different cathodes (LFP vs NMC) are different
+        batteries — different voltage, capacity, cost and fire behaviour. The anode matters for cycle life and
+        fast-charge capability, but the cathode defines the cell.
+      </p>
+
+      <h2>The Author's Take</h2>
+      <div class="box">
+        <p><strong>Position:</strong> When people compare "lithium batteries," they are really comparing cathodes — and
+        the anode, usually identical graphite, is the quiet partner that decides how long and how fast the cell can
+        be cycled.</p>
+        <p><strong>Reasoning:</strong> The cathode sets the headline numbers (voltage, energy, safety); the anode sets the
+        durability and charge-rate limits. Understanding both is the difference between reading a spec sheet and
+        understanding why two cells behave differently.</p>
+        <p class="muted"><em>This is the author's editorial view, not a purchasing guarantee.</em></p>
+      </div>
+
+      <h2>Sources</h2>
+      <ul>
+        <li>Cell-manufacturer datasheets (CATL, BYD, EVE) — cathode and anode specifications.</li>
+        <li>Battery engineering references — cathode and anode materials.</li>
+      </ul>
+
+      <p class="muted">Return to <a href="https://technology.worldbatteryhub.com">Battery Technology Reference</a> · <a href="https://worldbatteryhub.com">World Battery Hub</a>. Informational, not purchasing advice.</p>
+    </div>
+  </body>
+</html>
