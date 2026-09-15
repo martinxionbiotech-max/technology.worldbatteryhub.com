@@ -1,0 +1,83 @@
+---
+const SITE = 'https://technology.worldbatteryhub.com';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lithium Thermal Management | World Battery Hub</title>
+    <meta name="description" content="How lithium battery packs are kept in their safe temperature window — liquid and air cooling, heating, and why temperature is the master variable for performance, safety and lifespan." />
+    <link rel="canonical" href={`${SITE}/lithium-thermal-management/`} />
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 0; color: #1e293b; line-height: 1.6; }
+      .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+      h1, h2 { color: #0f1f3d; }
+      a { color: #1d4ed8; }
+      .muted { color: #64748b; font-size: 0.85rem; }
+      .box { background: #eff6ff; border-left: 4px solid #1d4ed8; padding: 12px 16px; margin: 14px 0; }
+      table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+      th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #e5e9f0; }
+      th { color: #0f1f3d; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Lithium Thermal Management</h1>
+      <p class="muted">Battery Technology Reference · Last reviewed 2026-09-15</p>
+
+      <div class="box">
+        <strong>Direct answer:</strong> Thermal management keeps a lithium pack inside its <strong>safe temperature
+        window</strong> — usually by <strong>liquid cooling</strong> (a coolant loop through the pack) or <strong>air
+        cooling</strong>, with <strong>heating</strong> added for cold climates. Temperature is the master variable: too hot
+        accelerates degradation and risks <a href="https://worldbatteryhub.com/lithium/thermal-runaway/">thermal
+        runaway</a>, too cold reduces performance and makes charging unsafe.
+      </div>
+
+      <h2>Why temperature is the master variable</h2>
+      <p>
+        A lithium cell's performance, safety and lifespan all bend around temperature. Heat speeds up every
+        degradation reaction; cold raises internal resistance and can plate lithium during charging (which is why
+        most BMS block charging near or below freezing). A pack that cannot shed heat dies early and, at the
+        extreme, can run away — so thermal management is a safety system as much as a performance one.
+      </p>
+
+      <h2>The cooling approaches</h2>
+      <table>
+        <thead><tr><th>Method</th><th>How it works</th><th>Typical use</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Liquid cooling</strong></td><td>Coolant loop through plates/channels beside cells</td><td>EV packs, high power</td></tr>
+          <tr><td><strong>Air cooling</strong></td><td>Forced air through the pack</td><td>Lower-power, cost-sensitive</td></tr>
+          <tr><td><strong>Heating</strong></td><td>Heaters or self-heating to warm cells before charge</td><td>Cold-climate operation</td></tr>
+        </tbody>
+      </table>
+
+      <h2>The cold side of the problem</h2>
+      <p>
+        Cold is the under-appreciated half. Below roughly 0°C, charging lithium plates metallic lithium on the
+        anode — a permanent, dangerous degradation. That is why cold-climate packs are <strong>heated before
+        charging</strong>, and why the BMS blocks or limits charge until the cells warm up. Thermal management is
+        therefore bidirectional: it cools to prevent runaway and heats to enable safe charging.
+      </p>
+
+      <h2>The Author's Take</h2>
+      <div class="box">
+        <p><strong>Position:</strong> Thermal management is the least glamorous and most consequential part of a
+        lithium pack — it is the difference between a battery that lasts a decade and one that degrades early or
+        fails dangerously.</p>
+        <p><strong>Reasoning:</strong> Chemistry sets the cell's limits; thermal management enforces them. A buyer who specs
+        cells but ignores the cooling has bought a chemistry without the system that keeps it safe and long-lived.</p>
+        <p class="muted"><em>This is the author's editorial view, not a purchasing guarantee.</em></p>
+      </div>
+
+      <h2>Sources</h2>
+      <ul>
+        <li>IEC 62660 / ISO 12405 — lithium cell and pack thermal test standards (reference).</li>
+        <li>Cell and pack manufacturer documentation — thermal management design.</li>
+      </ul>
+
+      <p class="muted">Return to <a href="https://technology.worldbatteryhub.com">Battery Technology Reference</a> · <a href="https://worldbatteryhub.com">World Battery Hub</a>. Informational, not purchasing advice.</p>
+    </div>
+  </body>
+</html>

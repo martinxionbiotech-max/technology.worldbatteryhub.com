@@ -1,0 +1,83 @@
+---
+const SITE = 'https://technology.worldbatteryhub.com';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lead-Acid Aging: Corrosion, Water Loss &amp; Stratification | World Battery Hub</title>
+    <meta name="description" content="The three aging mechanisms of a lead-acid battery beyond sulfation — grid corrosion, water loss and acid stratification — and how each is driven and slowed." />
+    <link rel="canonical" href={`${SITE}/lead-acid-aging/`} />
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 0; color: #1e293b; line-height: 1.6; }
+      .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+      h1, h2 { color: #0f1f3d; }
+      a { color: #1d4ed8; }
+      .muted { color: #64748b; font-size: 0.85rem; }
+      .box { background: #eff6ff; border-left: 4px solid #1d4ed8; padding: 12px 16px; margin: 14px 0; }
+      table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+      th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #e5e9f0; }
+      th { color: #0f1f3d; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Lead-Acid Aging: Corrosion, Water Loss &amp; Stratification</h1>
+      <p class="muted">Battery Technology Reference · Last reviewed 2026-09-15</p>
+
+      <div class="box">
+        <strong>Direct answer:</strong> Beyond sulfation, a lead-acid battery ages through three mechanisms:
+        <strong>grid corrosion</strong> (the positive grid slowly oxidises), <strong>water loss</strong> (overcharge splits
+        water into gas), and <strong>acid stratification</strong> (the acid concentrates at the bottom in a poorly-charged
+        battery). Heat and overcharge accelerate all three.
+      </div>
+
+      <h2>The three mechanisms</h2>
+      <table>
+        <thead><tr><th>Mechanism</th><th>What happens</th><th>Main driver</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Grid corrosion</strong></td><td>The positive lead grid oxidises and grows, weakening and eventually failing</td><td>Overcharge + heat</td></tr>
+          <tr><td><strong>Water loss</strong></td><td>Overcharge electrolyses water into hydrogen and oxygen, drying the electrolyte</td><td>Overcharge</td></tr>
+          <tr><td><strong>Stratification</strong></td><td>Denser acid sinks, so the bottom of the cell is over-acidified and the top under-acidified</td><td>Partial charging, no gassing</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Why overcharge is the common thread</h2>
+      <p>
+        Overcharge drives corrosion and water loss directly: it pushes the positive grid past its normal oxidation
+        and electrolyses water into gas. Stratification is the opposite problem — it happens when a battery is
+        <em>never fully charged</em>, so the acid is never mixed and settles by density. The two failure groups pull in
+        opposite directions, which is why the correct charge profile — neither over nor under — sits in the narrow
+        band between them.
+      </p>
+
+      <h2>How the technologies resist aging</h2>
+      <ul>
+        <li><strong>Lead–calcium grids</strong> — reduce water loss and self-discharge (the "maintenance-free" design).</li>
+        <li><strong>AGM</strong> — immobilises the electrolyte so it cannot stratify, and recombines oxygen to reduce water loss.</li>
+        <li><strong>EFB</strong> — carbon on the negative plate improves charge acceptance, reducing the partial-charge state that drives stratification.</li>
+      </ul>
+
+      <h2>The Author's Take</h2>
+      <div class="box">
+        <p><strong>Position:</strong> The three aging mechanisms are all charging problems in disguise — corrosion and
+        water loss from overcharge, stratification from undercharge — which is why the charger matters more than the
+        brand.</p>
+        <p><strong>Reasoning:</strong> The battery's chemistry sets its potential; the charge profile decides how much of that
+        potential survives. Understanding the three mechanisms makes the maintenance rule obvious: charge correctly,
+        and the battery ages on schedule instead of early.</p>
+        <p class="muted"><em>This is the author's editorial view, not a purchasing guarantee.</em></p>
+      </div>
+
+      <h2>Sources</h2>
+      <ul>
+        <li>Battery engineering references — corrosion, water loss and stratification mechanisms.</li>
+        <li>Manufacturer technical literature — grid alloys and maintenance-free design.</li>
+      </ul>
+
+      <p class="muted">Return to <a href="https://technology.worldbatteryhub.com">Battery Technology Reference</a> · <a href="https://worldbatteryhub.com">World Battery Hub</a>. Informational, not purchasing advice.</p>
+    </div>
+  </body>
+</html>
