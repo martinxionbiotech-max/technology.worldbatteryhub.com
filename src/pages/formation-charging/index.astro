@@ -8,7 +8,7 @@ const SITE = 'https://technology.worldbatteryhub.com';
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Formation &amp; Charging | World Battery Hub</title>
-    <meta name="description" content="Formation is the first charge that converts a lead-acid battery's paste into active material; charging is the ongoing reverse of discharge. How both work and why the charging profile matters." />
+    <meta name="description" content="Formation is the first charge that converts a lead-acid battery's paste into active material; charging is the ongoing reverse of discharge. How both work, the charging voltages by technology, and why the profile matters." />
     <link rel="canonical" href={`${SITE}/formation-charging/`} />
     <style>
       body { font-family: system-ui, sans-serif; margin: 0; color: #1e293b; line-height: 1.6; }
@@ -61,6 +61,22 @@ const SITE = 'https://technology.worldbatteryhub.com';
           <tr><td>Float (low constant voltage)</td><td>Tiny current holds full charge</td><td>Standby maintenance</td></tr>
         </tbody>
       </table>
+
+      <h2>Charging voltages by technology</h2>
+      <p>
+        The correct charge voltage differs by technology, which is why a charger must match the battery. Typical
+        12V absorption voltages (approximate, temperature-dependent):
+      </p>
+      <table>
+        <thead><tr><th>Technology</th><th>Typical absorption voltage</th><th>Note</th></tr></thead>
+        <tbody>
+          <tr><td>Flooded</td><td>~14.4–14.8 V</td><td>Higher to mix acid and avoid stratification</td></tr>
+          <tr><td>AGM</td><td>~14.4–14.7 V</td><td>Sensitive to overcharge — keep within the limit</td></tr>
+          <tr><td>EFB</td><td>~14.4–14.7 V</td><td>Similar to AGM, no equalisation charge</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Why the charger matters</h2>
       <p>
         Overcharging and undercharging are the two chronic killers: overcharge gasses off water and corrodes the
         grid; undercharge leaves sulfate to harden into the crystals that cause sulfation. The correct profile — and
@@ -73,16 +89,18 @@ const SITE = 'https://technology.worldbatteryhub.com';
         <p><strong>Position:</strong> Most premature lead-acid deaths are charging errors, not manufacturing defects —
         and the difference between a battery that lasts 5 years and one that dies in 2 is usually the charger, not
         the brand.</p>
-        <p><strong>Reasoning:</strong> The chemistry is reversible but only within a window; overcharge and undercharge
-        both push it outside that window and leave permanent damage. A charger matched to the battery's technology
-        keeps it in the window, which is why charging is the highest-leverage maintenance decision.</p>
+        <p><strong>Reasoning:</strong> The chemistry is reversible but only within a window; overcharge and undercharge both
+        push it outside that window and leave permanent damage. A charger matched to the battery's technology keeps
+        it in the window, which is why charging is the highest-leverage maintenance decision.</p>
         <p class="muted"><em>This is the author's editorial view, not a purchasing guarantee.</em></p>
       </div>
 
       <h2>Sources</h2>
       <ul>
         <li>Battery Council International (BCI) — charging and formation references.</li>
-        <li>Manufacturer technical literature — charge profiles and voltage limits by technology.</li>
+        <li>Manufacturer technical literature (Varta, Bosch, Exide) — charge profiles and voltage limits by technology.</li>
+        <li>Battery engineering references — formation and charging electrochemistry.</li>
+        <li>EN 50342 — European starter-battery standard (charge methods).</li>
       </ul>
 
       <p class="muted">Return to <a href="https://technology.worldbatteryhub.com">Battery Technology Reference</a> · <a href="https://worldbatteryhub.com">World Battery Hub</a>. Informational, not purchasing advice.</p>
