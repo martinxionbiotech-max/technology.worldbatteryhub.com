@@ -1,0 +1,90 @@
+---
+const SITE = 'https://technology.worldbatteryhub.com';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lithium Cell, Module &amp; Pack Architecture | World Battery Hub</title>
+    <meta name="description" content="How a lithium battery is built as a hierarchy — cell, module, pack — and why the BMS and thermal management sit at the pack level to keep the cells safe and balanced." />
+    <link rel="canonical" href={`${SITE}/lithium-cell-module-pack/`} />
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 0; color: #1e293b; line-height: 1.6; }
+      .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+      h1, h2 { color: #0f1f3d; }
+      a { color: #1d4ed8; }
+      .muted { color: #64748b; font-size: 0.85rem; }
+      .box { background: #eff6ff; border-left: 4px solid #1d4ed8; padding: 12px 16px; margin: 14px 0; }
+      table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+      th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #e5e9f0; }
+      th { color: #0f1f3d; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Lithium Cell, Module &amp; Pack Architecture</h1>
+      <p class="muted">Battery Technology Reference · Last reviewed 2026-09-15</p>
+
+      <div class="box">
+        <strong>Direct answer:</strong> A lithium battery is built as a hierarchy. The <strong>cell</strong> is the
+        electrochemical unit (one anode, cathode, separator, electrolyte). Cells are grouped into a <strong>module</strong>
+        with busbars and cooling. Modules plus the <strong>BMS</strong>, thermal management and enclosure form the
+        <strong>pack</strong> — the complete battery a vehicle or system uses. The hierarchy exists because packaging,
+        safety and serviceability are managed at each level.
+      </div>
+
+      <h2>The three levels</h2>
+      <table>
+        <thead><tr><th>Level</th><th>What it is</th><th>What it adds</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Cell</strong></td><td>One electrochemical unit (~3.2V LFP / ~3.7V NMC)</td><td>Voltage, capacity, chemistry</td></tr>
+          <tr><td><strong>Module</strong></td><td>Cells in series/parallel + busbars + cooling plate</td><td>Voltage scaling, structural grouping</td></tr>
+          <tr><td><strong>Pack</strong></td><td>Modules + BMS + thermal + enclosure</td><td>Safety, management, integration</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Why cells are not used alone</h2>
+      <p>
+        A single cell is a few volts and a limited capacity, so cells are wired in <strong>series</strong> (to raise voltage)
+        and <strong>parallel</strong> (to raise capacity). But wiring many cells together creates the problem the hierarchy
+        solves: cells are never perfectly identical, so they drift, and a pack must manage that drift. This is why
+        the <strong>BMS</strong> sits at the pack level — it watches each cell and balances them, because one weak cell limits
+        the whole series string.
+      </p>
+
+      <h2>The pack-level systems</h2>
+      <ul>
+        <li><strong>BMS</strong> — monitors each cell's voltage and temperature, balances cells, and cuts off on fault.</li>
+        <li><strong>Thermal management</strong> — cooling (liquid or air) to keep cells in their safe temperature window.</li>
+        <li><strong>Enclosure &amp; structure</strong> — crush protection and module separation so one failing cell cannot propagate.</li>
+      </ul>
+
+      <h2>Cell-to-pack: the newer simplification</h2>
+      <p>
+        Some modern designs skip the module level and integrate cells directly into the pack (cell-to-pack, as in
+        BYD's Blade and CATL's designs). Removing the module improves energy density and reduces parts, at the cost
+        of harder serviceability — a single failed cell becomes harder to isolate. The trend is toward fewer levels,
+        but the pack-level systems (BMS + thermal) remain non-negotiable.
+      </p>
+
+      <h2>The Author's Take</h2>
+      <div class="box">
+        <p><strong>Position:</strong> The cell gets the headlines, but the pack-level systems — BMS and thermal — are where
+        lithium safety and lifespan are actually decided, and the module level is slowly being engineered out.</p>
+        <p><strong>Reasoning:</strong> Cells are commodity; the management and cooling that keep them balanced and safe are the
+        engineering. A buyer who specs only cell chemistry has bought the raw material, not the battery system.</p>
+        <p class="muted"><em>This is the author's editorial view, not a purchasing guarantee.</em></p>
+      </div>
+
+      <h2>Sources</h2>
+      <ul>
+        <li>IEC 62660 / ISO 12405 — lithium cell and pack standards (reference).</li>
+        <li>Cell and pack manufacturer documentation — cell-to-pack and module architectures.</li>
+      </ul>
+
+      <p class="muted">Return to <a href="https://technology.worldbatteryhub.com">Battery Technology Reference</a> · <a href="https://worldbatteryhub.com">World Battery Hub</a>. Informational, not purchasing advice.</p>
+    </div>
+  </body>
+</html>
