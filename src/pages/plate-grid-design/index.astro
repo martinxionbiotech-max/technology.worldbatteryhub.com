@@ -1,0 +1,91 @@
+---
+const SITE = 'https://technology.worldbatteryhub.com';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lead-Acid Plate &amp; Grid Design | World Battery Hub</title>
+    <meta name="description" content="How lead-acid battery plates and grids are designed — grid alloy, plate thickness, surface area, and the CCA-versus-cycle-life trade-off that explains why same-Ah batteries can have different CCA." />
+    <link rel="canonical" href={`${SITE}/plate-grid-design/`} />
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 0; color: #1e293b; line-height: 1.6; }
+      .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+      h1, h2 { color: #0f1f3d; }
+      a { color: #1d4ed8; }
+      .muted { color: #64748b; font-size: 0.85rem; }
+      .box { background: #eff6ff; border-left: 4px solid #1d4ed8; padding: 12px 16px; margin: 14px 0; }
+      table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+      th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #e5e9f0; }
+      th { color: #0f1f3d; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Lead-Acid Plate &amp; Grid Design</h1>
+      <p class="muted">Battery Technology Reference · Last reviewed 2026-09-15</p>
+
+      <div class="box">
+        <strong>Direct answer:</strong> A lead-acid cell is built from <strong>positive plates</strong> (lead-dioxide
+        active material) and <strong>negative plates</strong> (spongy lead), each held on a <strong>lead-alloy grid</strong>.
+        The grid conducts current and supports the active material; plate <em>thickness and count</em> are the design
+        lever that trades cranking power against cycle life — which is why two batteries with the same Ah can have
+        different CCA.
+      </div>
+
+      <h2>The two jobs of the grid</h2>
+      <p>The grid is not the active material — it is the skeleton. It does two things:</p>
+      <ul>
+        <li><strong>Conducts current</strong> from the active material to the terminal.</li>
+        <li><strong>Holds the active material</strong> in place mechanically.</li>
+      </ul>
+      <p>The grid is a lead alloy, not pure lead, because alloying adds strength and changes behavior:</p>
+
+      <table>
+        <thead><tr><th>Grid alloy</th><th>Character</th><th>Typical use</th></tr></thead>
+        <tbody>
+          <tr><td>Lead–calcium (Pb–Ca)</td><td>Low water loss, low self-discharge, "maintenance-free"</td><td>SLI / start-stop / AGM</td></tr>
+          <tr><td>Lead–antimony (Pb–Sb)</td><td>Stronger grid, better deep cycling, higher water loss</td><td>Deep-cycle / traction</td></tr>
+          <tr><td>Lead–tin (Pb–Sn, additive)</td><td>Improves castability and corrosion resistance</td><td>Used with the above</td></tr>
+        </tbody>
+      </table>
+
+      <h2>The plate-count trade-off (why same Ah ≠ same CCA)</h2>
+      <p>For a fixed case size, the designer can choose <strong>more, thinner plates</strong> or <strong>fewer, thicker plates</strong>:</p>
+
+      <table>
+        <thead><tr><th>Design</th><th>Surface area</th><th>CCA (cranking)</th><th>Cycle life</th></tr></thead>
+        <tbody>
+          <tr><td>More, thinner plates</td><td>Higher</td><td><strong>Higher</strong></td><td>Lower (fragile, less active material reserve)</td></tr>
+          <tr><td>Fewer, thicker plates</td><td>Lower</td><td>Lower</td><td><strong>Higher</strong> (durable, deep-cycle friendly)</td></tr>
+        </tbody>
+      </table>
+
+      <p>CCA is largely a <strong>surface-area</strong> game: more plate surface means more simultaneous reaction,
+      so more instantaneous current. Capacity (Ah) is a <strong>mass-of-active-material</strong> game. A starting
+      battery optimizes surface area; a deep-cycle battery optimizes material mass and durability. That is the
+      concrete mechanism behind "a battery can be strong in one and modest in the other."</p>
+
+      <h2>The Author's Take</h2>
+      <div class="box">
+        <p><strong>Position:</strong> When a spec sheet gives Ah but hides the plate design, it is hiding the one
+        fact that explains the CCA number — plate geometry is the difference, not marketing.</p>
+        <p><strong>Reasoning:</strong> Ah and CCA are not convertible precisely because they live in different parts
+        of the cell — mass versus surface area. Once you see plates as the dial between them, most "mysterious" rating
+        gaps disappear.</p>
+        <p class="muted"><em>This is the author's editorial view, not a purchasing guarantee.</em></p>
+      </div>
+
+      <h2>Sources</h2>
+      <ul>
+        <li>Battery Council International (BCI) — lead-acid construction and grid-alloy references.</li>
+        <li>Yuasa / Canadian Energy — grid alloy and maintenance-free (Pb–Ca) vs deep-cycle (Pb–Sb) distinctions.</li>
+        <li>Cross-verified with manufacturer technical literature on plate-count and CCA-vs-cycle-life trade-offs.</li>
+      </ul>
+
+      <p class="muted">Return to <a href="https://technology.worldbatteryhub.com">Battery Technology Reference</a> · <a href="https://worldbatteryhub.com">World Battery Hub</a>. Informational, not purchasing advice.</p>
+    </div>
+  </body>
+</html>
