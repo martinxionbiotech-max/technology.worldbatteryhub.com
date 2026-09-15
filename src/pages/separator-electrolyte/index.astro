@@ -1,0 +1,89 @@
+---
+const SITE = 'https://technology.worldbatteryhub.com';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Separator &amp; Electrolyte | World Battery Hub</title>
+    <meta name="description" content="The separator and electrolyte of a lead-acid battery — how the separator isolates plates and holds electrolyte, and how sulfuric-acid density tracks state of charge." />
+    <link rel="canonical" href={`${SITE}/separator-electrolyte/`} />
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 0; color: #1e293b; line-height: 1.6; }
+      .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+      h1, h2 { color: #0f1f3d; }
+      a { color: #1d4ed8; }
+      .muted { color: #64748b; font-size: 0.85rem; }
+      .box { background: #eff6ff; border-left: 4px solid #1d4ed8; padding: 12px 16px; margin: 14px 0; }
+      table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+      th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #e5e9f0; }
+      th { color: #0f1f3d; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Separator &amp; Electrolyte</h1>
+      <p class="muted">Battery Technology Reference · Last reviewed 2026-09-15</p>
+
+      <div class="box">
+        <strong>Direct answer:</strong> Two parts complete the cell between the plates. The <strong>separator</strong> is
+        a thin, porous insulator that sits between each positive and negative plate to <em>prevent a short circuit</em>
+        while letting ions pass — and in AGM it also <em>holds the electrolyte</em>. The <strong>electrolyte</strong> is dilute
+        <strong>sulfuric acid (H₂SO₄)</strong>, the ion conductor whose density actually falls as the battery discharges,
+        which is why acid density is a direct state-of-charge reading.
+      </div>
+
+      <h2>The separator's two jobs</h2>
+      <ul>
+        <li><strong>Isolate</strong> — keep the positive and negative plates from touching and shorting.</li>
+        <li><strong>Pass ions</strong> — stay porous so the electrolyte's ions can flow between the plates.</li>
+      </ul>
+      <p>Separator material changes with technology:</p>
+      <table>
+        <thead><tr><th>Separator</th><th>Technology</th><th>Note</th></tr></thead>
+        <tbody>
+          <tr><td>Polyethylene (PE) envelope</td><td>Flooded / EFB</td><td>Thin, low-resistance, wraps each plate</td></tr>
+          <tr><td>Glass mat (AGM)</td><td>AGM</td><td>Absorbs the electrolyte — the defining AGM feature</td></tr>
+          <tr><td>Cellulose / phenolic</td><td>Older deep-cycle</td><td>Thicker, porous, good acid reserve</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Why the electrolyte is a state-of-charge gauge</h2>
+      <p>
+        During discharge the sulfuric acid is consumed to form lead sulfate, so the acid gets <em>weaker</em>. A
+        hydrometer reading of the acid density therefore tracks state of charge: about 1.265–1.28 g/cm³ fully
+        charged, down to about 1.10–1.15 when nearly empty. This is a real, measurable signal — the same
+        chemistry that makes the battery work also reports how full it is.
+      </p>
+
+      <h2>Why AGM's electrolyte changes the battery</h2>
+      <p>
+        In AGM the electrolyte is absorbed into the glass-mat separator rather than floating free. That immobilises
+        the acid against the plates, which lowers internal resistance (raising CCA) and removes the free liquid
+        that could leak or stratify. The separator and electrolyte are not independent parts in AGM — they are the
+        same component, and that is the whole reason AGM behaves differently from a flooded battery.
+      </p>
+
+      <h2>The Author's Take</h2>
+      <div class="box">
+        <p><strong>Position:</strong> The separator and electrolyte are the parts of the cell people never think
+        about, yet the AGM-vs-flooded difference — the single biggest lead-acid design fork — is entirely a
+        separator-and-electrolyte decision.</p>
+        <p><strong>Reasoning:</strong> Move the electrolyte from free liquid into a glass mat and you get lower
+        resistance, higher CCA, no spill risk and vibration tolerance. Understanding that one design choice explains
+        most of the AGM premium.</p>
+        <p class="muted"><em>This is the author's editorial view, not a purchasing guarantee.</em></p>
+      </div>
+
+      <h2>Sources</h2>
+      <ul>
+        <li>Battery Council International (BCI) — lead-acid construction references.</li>
+        <li>Manufacturer technical literature — separator materials and electrolyte density ranges.</li>
+      </ul>
+
+      <p class="muted">Return to <a href="https://technology.worldbatteryhub.com">Battery Technology Reference</a> · <a href="https://worldbatteryhub.com">World Battery Hub</a>. Informational, not purchasing advice.</p>
+    </div>
+  </body>
+</html>

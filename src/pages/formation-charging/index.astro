@@ -1,0 +1,91 @@
+---
+const SITE = 'https://technology.worldbatteryhub.com';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Formation &amp; Charging | World Battery Hub</title>
+    <meta name="description" content="Formation is the first charge that converts a lead-acid battery's paste into active material; charging is the ongoing reverse of discharge. How both work and why the charging profile matters." />
+    <link rel="canonical" href={`${SITE}/formation-charging/`} />
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 0; color: #1e293b; line-height: 1.6; }
+      .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+      h1, h2 { color: #0f1f3d; }
+      a { color: #1d4ed8; }
+      .muted { color: #64748b; font-size: 0.85rem; }
+      .box { background: #eff6ff; border-left: 4px solid #1d4ed8; padding: 12px 16px; margin: 14px 0; }
+      table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+      th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #e5e9f0; }
+      th { color: #0f1f3d; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Formation &amp; Charging</h1>
+      <p class="muted">Battery Technology Reference · Last reviewed 2026-09-15</p>
+
+      <div class="box">
+        <strong>Direct answer:</strong> <strong>Formation</strong> is the one-time initial charge at the factory that
+        converts the pasted plates into their final active materials — turning the positive paste into lead dioxide
+        (PbO₂) and the negative into spongy lead (Pb). <strong>Charging</strong> is the ongoing process that reverses
+        discharge, converting lead sulfate back into lead, lead dioxide and acid. Formation makes the battery work;
+        charging keeps it working.
+      </div>
+
+      <h2>Formation: the factory's first charge</h2>
+      <p>
+        A newly assembled plate is not yet a battery plate — its paste is a raw mix that has not become active
+        material. Formation passes a controlled current through the assembled cell, electrochemically converting
+        the positive paste to lead dioxide and the negative to spongy lead. The charge profile and duration are
+        carefully controlled, because under-formation leaves capacity unused and over-formation wastes energy and
+        damages the plates.
+      </p>
+
+      <h2>Charging: reversing the discharge</h2>
+      <p>
+        Discharge converts lead, lead dioxide and sulfuric acid into lead sulfate and water. Charging pushes current
+        the other way and reverses that — the sulfate returns to lead on the negative, lead dioxide on the positive,
+        and acid is regenerated. The profile matters: a correct charge fully reverses the reaction without
+        overcharging, which would split water into gas (water loss) and corrode the positive grid.
+      </p>
+
+      <h2>The charging profile</h2>
+      <table>
+        <thead><tr><th>Stage</th><th>What happens</th><th>Purpose</th></tr></thead>
+        <tbody>
+          <tr><td>Bulk (constant current)</td><td>High current restores most charge</td><td>Fast recovery</td></tr>
+          <tr><td>Absorption (constant voltage)</td><td>Current tapers at the voltage limit</td><td>Finish without overcharge</td></tr>
+          <tr><td>Float (low constant voltage)</td><td>Tiny current holds full charge</td><td>Standby maintenance</td></tr>
+        </tbody>
+      </table>
+      <p>
+        Overcharging and undercharging are the two chronic killers: overcharge gasses off water and corrodes the
+        grid; undercharge leaves sulfate to harden into the crystals that cause sulfation. The correct profile — and
+        a charger matched to the battery technology (flooded, AGM or EFB) — keeps the battery in the narrow band
+        between the two.
+      </p>
+
+      <h2>The Author's Take</h2>
+      <div class="box">
+        <p><strong>Position:</strong> Most premature lead-acid deaths are charging errors, not manufacturing defects —
+        and the difference between a battery that lasts 5 years and one that dies in 2 is usually the charger, not
+        the brand.</p>
+        <p><strong>Reasoning:</strong> The chemistry is reversible but only within a window; overcharge and undercharge
+        both push it outside that window and leave permanent damage. A charger matched to the battery's technology
+        keeps it in the window, which is why charging is the highest-leverage maintenance decision.</p>
+        <p class="muted"><em>This is the author's editorial view, not a purchasing guarantee.</em></p>
+      </div>
+
+      <h2>Sources</h2>
+      <ul>
+        <li>Battery Council International (BCI) — charging and formation references.</li>
+        <li>Manufacturer technical literature — charge profiles and voltage limits by technology.</li>
+      </ul>
+
+      <p class="muted">Return to <a href="https://technology.worldbatteryhub.com">Battery Technology Reference</a> · <a href="https://worldbatteryhub.com">World Battery Hub</a>. Informational, not purchasing advice.</p>
+    </div>
+  </body>
+</html>
