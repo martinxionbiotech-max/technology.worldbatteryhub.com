@@ -1,0 +1,87 @@
+---
+const SITE = 'https://technology.worldbatteryhub.com';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Battery Recycling Technology | World Battery Hub</title>
+    <meta name="description" content="How batteries are recycled — lead-acid's mature crush-smelt-refine loop versus lithium's emerging shred and hydro/pyrometallurgy. The two recycling technologies compared." />
+    <link rel="canonical" href={`${SITE}/battery-recycling-technology/`} />
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 0; color: #1e293b; line-height: 1.6; }
+      .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+      h1, h2 { color: #0f1f3d; }
+      a { color: #1d4ed8; }
+      .muted { color: #64748b; font-size: 0.85rem; }
+      .box { background: #eff6ff; border-left: 4px solid #1d4ed8; padding: 12px 16px; margin: 14px 0; }
+      table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+      th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #e5e9f0; }
+      th { color: #0f1f3d; width: 34%; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Battery Recycling Technology</h1>
+      <p class="muted">Battery Technology Reference · Last reviewed 2026-09-16</p>
+
+      <div class="box">
+        <strong>Direct answer:</strong> The two chemistries recycle differently. <strong>Lead-acid</strong> uses a
+        mature loop — <strong>crush, smelt, refine</strong> — recovering lead, plastic and acid at ~99% rates.
+        <strong>Lithium</strong> is still industrialising: cells are <strong>shredded</strong> into black mass, then
+        treated by <strong>hydrometallurgy</strong> (leaching and precipitation) or <strong>pyrometallurgy</strong>
+        (smelting), with <strong>direct recycling</strong> of intact cathode material emerging.
+      </div>
+
+      <h2>The two recycling technologies</h2>
+      <table>
+        <thead><tr><th></th><th>Lead-acid</th><th>Lithium-ion</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Process</strong></td><td>Crush → smelt → refine</td><td>Shred → hydro/pyro-metallurgy</td></tr>
+          <tr><td><strong>Recovery rate</strong></td><td>~99% (mature)</td><td>Rising, still below lead-acid</td></tr>
+          <tr><td><strong>Products</strong></td><td>Lead, polypropylene, acid</td><td>Lithium, nickel, cobalt, manganese</td></tr>
+          <tr><td><strong>Maturity</strong></td><td>Decades, profitable</td><td>Scaling, cost-driven</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Why lead-acid is the benchmark</h2>
+      <p>
+        Lead-acid recycling works because the chemistry is simple and the metal is valuable: the same lead can be
+        remelted into new grids indefinitely, and the loop is profitable on its own
+        (see <a href="https://worldbatteryhub.com/lead-acid/recycling/">the ~99% loop</a>). It is the reference
+        that every other chemistry's recycling is measured against.
+      </p>
+
+      <h2>Lithium's harder problem</h2>
+      <p>
+        Lithium cells are a complex, sealed sandwich of many materials — cathode powders, foils, electrolyte — so
+        recovery means <strong>shredding</strong> under controlled conditions (charged cells burn) and then
+        separating the elements. Hydrometallurgy extracts them by chemistry; pyrometallurgy smelts the metals but
+        loses lithium to slag; <strong>direct recycling</strong> skips the breakdown by recovering the cathode
+        material intact — the most efficient route, still maturing (see
+        <a href="https://worldbatteryhub.com/lithium/lithium-recycling/">lithium recycling</a>).
+      </p>
+
+      <h2>The Author's Take</h2>
+      <div class="box">
+        <p><strong>Position:</strong> Recycling technology is the quiet second act of the battery industry — lead-acid
+        already closes its loop profitably, and lithium's race is to make its own loop economical, which is where
+        direct recycling matters most.</p>
+        <p><strong>Reasoning:</strong> A chemistry's environmental story is decided as much by its recovery as its
+        manufacture. Lead-acid proves the closed loop is possible; lithium's task is reproducing it for a far more
+        complex product — and whichever route makes that profitable will shape the industry's material future.</p>
+        <p class="muted"><em>This is the author's editorial view, not a purchasing guarantee.</em></p>
+      </div>
+
+      <h2>Sources</h2>
+      <ul>
+        <li>Recycling-industry references — lead-acid smelting and lithium black-mass processes.</li>
+        <li>Battery engineering references — hydrometallurgy, pyrometallurgy and direct recycling.</li>
+      </ul>
+
+      <p class="muted">Return to <a href="https://technology.worldbatteryhub.com">Battery Technology Reference</a> · <a href="https://worldbatteryhub.com">World Battery Hub</a>. Informational, not purchasing advice.</p>
+    </div>
+  </body>
+</html>
