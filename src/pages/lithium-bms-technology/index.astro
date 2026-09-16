@@ -1,0 +1,88 @@
+---
+const SITE = 'https://technology.worldbatteryhub.com';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lithium BMS Technology: Inside the Battery Management System | World Battery Hub</title>
+    <meta name="description" content="Inside a lithium BMS — cell monitoring, protection, balancing, SOC/SOH estimation and communication. How the management layers make a pack safe and usable." />
+    <link rel="canonical" href={`${SITE}/lithium-bms-technology/`} />
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 0; color: #1e293b; line-height: 1.6; }
+      .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+      h1, h2 { color: #0f1f3d; }
+      a { color: #1d4ed8; }
+      .muted { color: #64748b; font-size: 0.85rem; }
+      .box { background: #eff6ff; border-left: 4px solid #1d4ed8; padding: 12px 16px; margin: 14px 0; }
+      table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+      th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #e5e9f0; }
+      th { color: #0f1f3d; width: 32%; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Lithium BMS Technology: Inside the Battery Management System</h1>
+      <p class="muted">Battery Technology Reference · Last reviewed 2026-09-16</p>
+
+      <div class="box">
+        <strong>Direct answer:</strong> The BMS is the pack's brain. It <strong>monitors each cell's voltage and
+        temperature</strong>, <strong>protects</strong> against overvoltage, undervoltage, overcurrent and
+        over-temperature, <strong>balances</strong> the cells, <strong>estimates SOC and SOH</strong>, and
+        <strong>communicates</strong> with the rest of the system. These layers are what make a lithium pack both
+        safe and usable — a lithium battery is really a battery plus its BMS.
+      </div>
+
+      <h2>The BMS layers</h2>
+      <table>
+        <thead><tr><th>Layer</th><th>What it does</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Monitoring</strong></td><td>Reads every cell's voltage, pack current and temperatures</td></tr>
+          <tr><td><strong>Protection</strong></td><td>Opens contactors/fets when any cell leaves its safe window</td></tr>
+          <tr><td><strong>Balancing</strong></td><td>Equalises cell voltages so the pack reaches its limits together</td></tr>
+          <tr><td><strong>Estimation</strong></td><td>Computes SOC and SOH from voltage, current and models</td></tr>
+          <tr><td><strong>Communication</strong></td><td>Reports state to the vehicle/system (CAN, etc.)</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Why monitoring must be per-cell</h2>
+      <p>
+        Series cells drift — one weak cell overcharges while the others are still filling. The BMS therefore reads
+        <strong>every cell individually</strong>, not just the pack total, because the pack total hides the one cell
+        approaching danger. That per-cell visibility is the difference between managing a battery and watching a
+        fire hazard (see <a href="/cell-balancing/">cell balancing</a> and
+        <a href="https://testing.worldbatteryhub.com/bms-testing/">BMS testing</a>).
+      </p>
+
+      <h2>Estimation: the hard part</h2>
+      <p>
+        SOC cannot be measured directly — the BMS <strong>estimates</strong> it from voltage, current integration
+        and a model of the cell. The estimate drifts, so the BMS recalibrates at known points (full charge, rest).
+        SOH — the aging state — is harder still, inferred from capacity fade and resistance rise. The estimation
+        quality is what separates a BMS that knows its battery from one that guesses.
+      </p>
+
+      <h2>The Author's Take</h2>
+      <div class="box">
+        <p><strong>Position:</strong> A lithium battery is only as good as its BMS — the cells provide the energy,
+        the BMS provides the safety, the balance and the honesty about state — which is why the BMS deserves at least
+        as much attention as the cells when evaluating a pack.</p>
+        <p><strong>Reasoning:</strong> Cells are commodity; management is engineering. The same cells with a weak BMS are
+        a hazard with a misleading gauge. Buyers who evaluate the BMS — its per-cell monitoring, protection and
+        estimation quality — are evaluating the actual product.</p>
+        <p class="muted"><em>This is the author's editorial view, not a purchasing guarantee.</em></p>
+      </div>
+
+      <h2>Sources</h2>
+      <ul>
+        <li>IEC 62660 / ISO 12405 — BMS function and test references.</li>
+        <li>BMS and pack-manufacturer documentation — architecture and estimation algorithms.</li>
+        <li>Battery engineering references — SOC/SOH estimation methods.</li>
+      </ul>
+
+      <p class="muted">Return to <a href="https://technology.worldbatteryhub.com">Battery Technology Reference</a> · <a href="https://worldbatteryhub.com">World Battery Hub</a>. Informational, not purchasing advice.</p>
+    </div>
+  </body>
+</html>
