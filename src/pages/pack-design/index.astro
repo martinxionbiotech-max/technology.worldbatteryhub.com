@@ -1,0 +1,86 @@
+---
+const SITE = 'https://technology.worldbatteryhub.com';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Battery Pack Design | World Battery Hub</title>
+    <meta name="description" content="Battery pack design — series-parallel architecture, cooling, structure and the BMS. How cells become a pack, and where the engineering difficulty lives." />
+    <link rel="canonical" href={`${SITE}/pack-design/`} />
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 0; color: #1e293b; line-height: 1.6; }
+      .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+      h1, h2 { color: #0f1f3d; }
+      a { color: #1d4ed8; }
+      .muted { color: #64748b; font-size: 0.85rem; }
+      .box { background: #eff6ff; border-left: 4px solid #1d4ed8; padding: 12px 16px; margin: 14px 0; }
+      table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+      th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #e5e9f0; }
+      th { color: #0f1f3d; width: 32%; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Battery Pack Design</h1>
+      <p class="muted">Battery Technology Reference · Systems · Last reviewed 2026-09-16</p>
+
+      <div class="box">
+        <strong>Direct answer:</strong> A battery pack is <strong>cells organised into a system</strong>: a
+        <strong>series-parallel network</strong> to reach the target voltage and capacity, a <strong>structure</strong>
+        that holds and protects, a <strong>cooling design</strong> that keeps every cell in its temperature window,
+        and the <a href="/lithium-bms-technology/">BMS</a> that monitors and protects them all. The cells are
+        commodity; the pack design is where the engineering lives.
+      </div>
+
+      <h2>The pack's four subsystems</h2>
+      <table>
+        <thead><tr><th>Subsystem</th><th>Job</th><th>Failure if wrong</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Electrical (S/P network)</strong></td><td>Voltage × capacity, current paths, fusing</td><td>Hotspots, imbalance, shorts</td></tr>
+          <tr><td><strong>Structure</strong></td><td>Hold cells, resist crash/expansion</td><td>Crush damage, thermal runaway</td></tr>
+          <tr><td><strong>Cooling</strong></td><td>Keep all cells in window (see <a href="/lithium-thermal-management/">thermal</a>)</td><td>Accelerated aging, runaway</td></tr>
+          <tr><td><strong>BMS</strong></td><td>Monitor, protect, balance, communicate</td><td>Unprotected cells — the worst case</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Why packs, not cells, are the product</h2>
+      <p>
+        A single cell is a chemistry demonstration; a pack is a <strong>thermal, mechanical and electrical
+        system</strong> that must survive vibration, crash, heat and years of cycling while keeping hundreds of
+        cells inside their limits. The difference between two packs built from the same cells is the difference
+        between two designs — which is why pack engineering, not cell choice, decides safety and longevity
+        (see <a href="/lithium-manufacturing/">lithium manufacturing</a> for the module step).
+      </p>
+
+      <h2>The balancing and matching problem</h2>
+      <p>
+        Series cells must be <strong>matched</strong> (see <a href="/quality-control/">grading</a>) and
+        <strong>balanced</strong> (see <a href="/cell-balancing/">balancing</a>), because the pack reaches its
+        limits at its <strong>weakest cell</strong>. The design's job is to make the weakest cell as strong as
+        possible — through matching at build and balancing in service — which is the quiet core of pack longevity.
+      </p>
+
+      <h2>The Author's Take</h2>
+      <div class="box">
+        <p><strong>Position:</strong> The battery pack is where cells become a product — the same cells can make a
+        safe decade-long pack or a hazard depending on the design around them — which is why pack engineering
+        deserves more attention than cell chemistry in any purchase.</p>
+        <p><strong>Reasoning:</strong> Chemistry sets the ceiling; the pack sets the reality. Cooling, structure,
+        matching and the BMS decide whether the cells reach their ceiling or fail early. Buyers who evaluate the
+        pack — not just the cell spec — are evaluating the actual product.</p>
+        <p class="muted"><em>This is the author's editorial view, not a purchasing guarantee.</em></p>
+      </div>
+
+      <h2>Sources</h2>
+      <ul>
+        <li>Pack-manufacturer documentation — architecture and thermal design.</li>
+        <li>Battery engineering references — pack electrical and mechanical design.</li>
+      </ul>
+
+      <p class="muted">Return to <a href="https://technology.worldbatteryhub.com">Battery Technology Reference</a> · <a href="https://worldbatteryhub.com">World Battery Hub</a>. Informational, not purchasing advice.</p>
+    </div>
+  </body>
+</html>
