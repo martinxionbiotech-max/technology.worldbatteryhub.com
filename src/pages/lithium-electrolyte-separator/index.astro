@@ -1,0 +1,85 @@
+---
+const SITE = 'https://technology.worldbatteryhub.com';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lithium Electrolyte &amp; Separator | World Battery Hub</title>
+    <meta name="description" content="Inside a lithium cell: the electrolyte carries ions, the separator keeps the electrodes apart. Why the separator is the safety component and the electrolyte sets the limits." />
+    <link rel="canonical" href={`${SITE}/lithium-electrolyte-separator/`} />
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 0; color: #1e293b; line-height: 1.6; }
+      .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+      h1, h2 { color: #0f1f3d; }
+      a { color: #1d4ed8; }
+      .muted { color: #64748b; font-size: 0.85rem; }
+      .box { background: #eff6ff; border-left: 4px solid #1d4ed8; padding: 12px 16px; margin: 14px 0; }
+      table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+      th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #e5e9f0; }
+      th { color: #0f1f3d; width: 30%; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Lithium Electrolyte &amp; Separator</h1>
+      <p class="muted">Battery Technology Reference · Last reviewed 2026-09-16</p>
+
+      <div class="box">
+        <strong>Direct answer:</strong> Between a lithium cell's electrodes sit two components with opposite jobs.
+        The <strong>electrolyte</strong> — a lithium salt dissolved in an organic solvent — carries the ions between
+        cathode and anode. The <strong>separator</strong> — a thin porous polymer film — keeps the electrodes
+        <strong>apart</strong> while letting ions pass. The electrolyte sets the cell's voltage and temperature
+        limits; the separator is the <strong>safety component</strong> whose failure is how shorts begin.
+      </div>
+
+      <h2>The two components</h2>
+      <table>
+        <thead><tr><th>Component</th><th>Job</th><th>Failure consequence</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Electrolyte</strong></td><td>Carry lithium ions between electrodes</td><td>Decomposition, gassing, capacity loss</td></tr>
+          <tr><td><strong>Separator</strong></td><td>Keep electrodes apart, pass ions</td><td>Internal short → thermal runaway</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Why the separator is the safety component</h2>
+      <p>
+        The separator is all that stands between the energy stored in the electrodes and a direct short. If it
+        shrinks (from heat), is punctured (by dendrites or particles) or degrades, the electrodes touch locally —
+        and a local short is exactly how
+        <a href="https://worldbatteryhub.com/lithium/thermal-runaway/">thermal runaway</a> begins. This is why
+        separators have shutdown layers that close their pores at high temperature, sacrificing the cell to stop
+        the reaction.
+      </p>
+
+      <h2>What the electrolyte limits</h2>
+      <p>
+        The organic electrolyte is the reason lithium cells cannot simply run hotter or charge faster: above its
+        stability window the solvent decomposes and gas forms, and at low temperature the electrolyte's conductivity
+        collapses. The cell's temperature and voltage limits are, in large part, <strong>electrolyte limits</strong> —
+        see <a href="/lithium-thermal-management/">thermal management</a> for how packs stay inside them.
+      </p>
+
+      <h2>The Author's Take</h2>
+      <div class="box">
+        <p><strong>Position:</strong> The two least-discussed components of a lithium cell are the two most
+        consequential — the electrolyte decides the limits, the separator decides the safety, and the separator's
+        shutdown layer is the last line of defence against a fire.</p>
+        <p><strong>Reasoning:</strong> Cathode chemistry gets the marketing; the electrolyte and separator do the quiet
+        work of carrying ions and preventing shorts. Understanding them is the difference between reading a cell as a
+        chemistry and reading it as a safety system.</p>
+        <p class="muted"><em>This is the author's editorial view, not a purchasing guarantee.</em></p>
+      </div>
+
+      <h2>Sources</h2>
+      <ul>
+        <li>Cell-manufacturer documentation — electrolyte and separator specifications.</li>
+        <li>Battery engineering references — electrolyte stability and separator shutdown.</li>
+      </ul>
+
+      <p class="muted">Return to <a href="https://technology.worldbatteryhub.com">Battery Technology Reference</a> · <a href="https://worldbatteryhub.com">World Battery Hub</a>. Informational, not purchasing advice.</p>
+    </div>
+  </body>
+</html>
