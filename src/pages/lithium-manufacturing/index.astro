@@ -1,0 +1,90 @@
+---
+const SITE = 'https://technology.worldbatteryhub.com';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lithium Battery Manufacturing | World Battery Hub</title>
+    <meta name="description" content="How a lithium battery is made — electrode coating, calendaring, stacking or winding, electrolyte filling, formation, aging, grading, and module/pack assembly." />
+    <link rel="canonical" href={`${SITE}/lithium-manufacturing/`} />
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 0; color: #1e293b; line-height: 1.6; }
+      .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+      h1, h2 { color: #0f1f3d; }
+      a { color: #1d4ed8; }
+      .muted { color: #64748b; font-size: 0.85rem; }
+      .box { background: #eff6ff; border-left: 4px solid #1d4ed8; padding: 12px 16px; margin: 14px 0; }
+      table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+      th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #e5e9f0; }
+      th { color: #0f1f3d; width: 32%; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Lithium Battery Manufacturing</h1>
+      <p class="muted">Battery Technology Reference · Manufacturing · Last reviewed 2026-09-16</p>
+
+      <div class="box">
+        <strong>Direct answer:</strong> A lithium cell is made by coating electrode slurry onto foil, then
+        <strong>drying, calendaring and slitting</strong> it; the electrodes are <strong>stacked or wound</strong> into
+        a cell, filled with electrolyte, and given a first <strong>formation</strong> charge. Cells are then
+        <strong>aged, graded</strong> and assembled into <strong>modules and packs</strong> with a BMS. Precision and
+        cleanliness dominate, because lithium cells are far more sensitive than lead-acid.
+      </div>
+
+      <h2>The process, step by step</h2>
+      <table>
+        <thead><tr><th>Step</th><th>What happens</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Electrode coating</strong></td><td>Cathode/anode slurry is coated onto metal foil</td></tr>
+          <tr><td><strong>Drying &amp; calendaring</strong></td><td>Solvent is removed; the coating is compressed to density</td></tr>
+          <tr><td><strong>Slitting</strong></td><td>Coated foil is cut into electrode strips</td></tr>
+          <tr><td><strong>Stacking / winding</strong></td><td>Electrodes and separator are layered or wound into a cell</td></tr>
+          <tr><td><strong>Electrolyte filling</strong></td><td>Electrolyte is added in a dry environment</td></tr>
+          <tr><td><strong>Formation &amp; aging</strong></td><td>First charge forms the SEI; cells are aged and graded</td></tr>
+          <tr><td><strong>Module &amp; pack assembly</strong></td><td>Cells are grouped and integrated with the BMS</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Why precision and cleanliness dominate</h2>
+      <p>
+        Lithium cells are unforgiving of contamination — moisture and metallic particles can seed internal shorts
+        and <a href="https://worldbatteryhub.com/lithium/thermal-runaway/">thermal runaway</a>. This is why lithium
+        manufacturing runs in <strong>dry rooms</strong> with tight process control, and why the formation step (which
+        grows the solid-electrolyte interphase, the SEI) directly sets cycle life. The whole process is a precision
+        discipline, unlike lead-acid's more tolerant commodity process.
+      </p>
+
+      <h2>Formation and grading</h2>
+      <p>
+        The first charge — <strong>formation</strong> — builds the SEI layer that governs the cell's lifespan, so its
+        profile is a critical quality lever. After formation, cells are <strong>aged and graded</strong>: they are
+        rested and tested, then sorted by capacity and internal resistance, so a pack is assembled from matched cells.
+        This grading is the direct answer to <a href="/cell-balancing/">why balancing matters</a> — matching at the
+        factory reduces the imbalance the BMS must later manage.
+      </p>
+
+      <h2>The Author's Take</h2>
+      <div class="box">
+        <p><strong>Position:</strong> Lithium manufacturing is a precision discipline, not a recipe — the formation
+        step that grows the SEI is where cycle life is actually set, and the cleanroom control is where safety is
+        actually set, long before the cell is ever sold.</p>
+        <p><strong>Reasoning:</strong> The cathode gets the headlines, but the cell's real quality is decided in the
+        factory by formation, grading and contamination control. A buyer who understands this understands why
+        manufacturing quality — not just chemistry — separates a decade-lasting cell from an early failure.</p>
+        <p class="muted"><em>This is the author's editorial view, not a purchasing guarantee.</em></p>
+      </div>
+
+      <h2>Sources</h2>
+      <ul>
+        <li>Cell-manufacturer documentation — electrode coating, formation and grading.</li>
+        <li>Battery engineering references — lithium cell manufacturing and SEI formation.</li>
+      </ul>
+
+      <p class="muted">Return to <a href="https://technology.worldbatteryhub.com">Battery Technology Reference</a> · <a href="https://worldbatteryhub.com">World Battery Hub</a>. Informational overview, not operational instructions.</p>
+    </div>
+  </body>
+</html>
