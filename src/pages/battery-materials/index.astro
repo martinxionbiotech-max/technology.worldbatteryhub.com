@@ -1,0 +1,88 @@
+---
+const SITE = 'https://technology.worldbatteryhub.com';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Battery Materials: The Complete Map | World Battery Hub</title>
+    <meta name="description" content="Every battery is its materials — lead, acid, grids and separators for lead-acid; cathode powders, graphite, electrolyte and separator for lithium. The complete materials map." />
+    <link rel="canonical" href={`${SITE}/battery-materials/`} />
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 0; color: #1e293b; line-height: 1.6; }
+      .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+      h1, h2 { color: #0f1f3d; }
+      a { color: #1d4ed8; }
+      .muted { color: #64748b; font-size: 0.85rem; }
+      .box { background: #eff6ff; border-left: 4px solid #1d4ed8; padding: 12px 16px; margin: 14px 0; }
+      table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+      th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #e5e9f0; }
+      th { color: #0f1f3d; width: 22%; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Battery Materials: The Complete Map</h1>
+      <p class="muted">Battery Technology Reference · Materials · Last reviewed 2026-09-16</p>
+
+      <div class="box">
+        <strong>Direct answer:</strong> Every battery is its materials, and the two chemistries use opposite sets.
+        <strong>Lead-acid</strong>: lead (grids + active material), <strong>sulfuric acid</strong> electrolyte,
+        grid alloys, separators. <strong>Lithium-ion</strong>: <strong>cathode powders</strong> (NMC/LFP),
+        <strong>graphite anode</strong>, lithium-salt electrolyte, polymer separator. The material choice is the
+        chemistry — everything else is engineering around it.
+      </div>
+
+      <h2>The materials map</h2>
+      <table>
+        <thead><tr><th></th><th>Lead-acid</th><th>Lithium-ion</th></tr></thead>
+        <tbody>
+          <tr><td><strong>Positive electrode</strong></td><td>Lead dioxide paste (see <a href="/lead-oxide/">lead oxide</a>)</td><td>Cathode powder — NMC, LFP (see <a href="/lithium-cathode-anode/">cathode &amp; anode</a>)</td></tr>
+          <tr><td><strong>Negative electrode</strong></td><td>Sponge lead on alloy grids</td><td>Graphite (with silicon blends emerging)</td></tr>
+          <tr><td><strong>Electrolyte</strong></td><td>Sulfuric acid (see <a href="/electrolyte-specific-gravity/">specific gravity</a>)</td><td>Lithium salt in organic solvent</td></tr>
+          <tr><td><strong>Separator</strong></td><td>Microporous polymer/glass mat</td><td>Polymer film (see <a href="/lithium-electrolyte-separator/">separator</a>)</td></tr>
+          <tr><td><strong>Structure</strong></td><td>Lead grid (see <a href="/plate-grid-design/">plate &amp; grid</a>)</td><td>Copper/aluminium foil current collectors</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Why materials are the chemistry</h2>
+      <p>
+        The electrodes' materials set the <strong>voltage</strong> and the <strong>energy per kilogram</strong>;
+        everything else — grids, foils, separators, additives — engineers the material's limits
+        (see <a href="/electrolyte-additives/">additives</a>). That is why battery development is mostly
+        <strong>materials development</strong>: a better cathode or a carbon additive changes the product more
+        than any assembly detail.
+      </p>
+
+      <h2>The cost and supply lens</h2>
+      <p>
+        Materials also decide <strong>cost and geopolitics</strong>: lead-acid's materials are cheap, recyclable
+        and abundant; lithium's include nickel, cobalt and lithium itself, whose prices move markets (see
+        <a href="https://market.worldbatteryhub.com/china-battery-prices/">lithium prices</a> and
+        <a href="https://market.worldbatteryhub.com/battery-recycling-market/">recycling</a>). The material map is
+        therefore also the cost map and the supply-risk map.
+      </p>
+
+      <h2>Our Read</h2>
+      <div class="box">
+        <p><strong>My read:</strong> The materials map is the cleanest way to understand any battery — chemistry
+        sets the electrodes, electrodes set voltage and energy, and cost and supply follow the materials — which
+        is why materials, not brands, are the analytical starting point.</p>
+        <p><strong>Why:</strong> Everything downstream is engineering around the material set. The analyst who knows
+        the map reads battery news, price moves and product claims correctly — each maps back to a material, a
+        cost and a supply chain.</p>
+        <p class="muted"><em>My editorial view, not a purchasing guarantee.</em></p>
+      </div>
+
+      <h2>Sources</h2>
+      <ul>
+        <li>Battery engineering references — electrode and electrolyte materials.</li>
+        <li>Manufacturer documentation — material specifications.</li>
+      </ul>
+
+      <p class="muted">Return to <a href="https://technology.worldbatteryhub.com">Battery Technology Reference</a> · <a href="https://worldbatteryhub.com">World Battery Hub</a>. Informational, not purchasing advice.</p>
+    </div>
+  </body>
+</html>
