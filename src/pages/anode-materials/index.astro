@@ -1,0 +1,84 @@
+---
+const SITE = 'https://technology.worldbatteryhub.com';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Anode Materials: Graphite, Silicon and LTO | World Battery Hub</title>
+    <meta name="description" content="Lithium-ion anode materials — graphite (the standard), silicon (higher capacity, higher expansion) and LTO (fast-charge, long-life). How each trades capacity against stability." />
+    <link rel="canonical" href={`${SITE}/anode-materials/`} />
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 0; color: #1e293b; line-height: 1.6; }
+      .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+      h1, h2 { color: #0f1f3d; }
+      a { color: #1d4ed8; }
+      .muted { color: #64748b; font-size: 0.85rem; }
+      .box { background: #eff6ff; border-left: 4px solid #1d4ed8; padding: 12px 16px; margin: 14px 0; }
+      table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+      th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #e5e9f0; }
+      th { color: #0f1f3d; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Anode Materials: Graphite, Silicon and LTO</h1>
+      <p class="muted">Battery Technology Reference · Last reviewed 2026-09-16</p>
+
+      <div class="box">
+        <strong>Direct answer:</strong> The lithium-ion anode stores lithium ions during charge. The standard material
+        is <strong>graphite</strong>; <strong>silicon</strong> offers ~10× the capacity but with a large volume-expansion
+        problem, so it is usually blended into silicon-carbon composites; and <strong>LTO</strong> (lithium titanate)
+        is a fast-charging, long-life, lower-energy alternative. The anode is also where the protective SEI layer forms.
+      </div>
+
+      <h2>The anode materials</h2>
+      <table>
+        <thead><tr><th>Anode</th><th>Relative capacity</th><th>Key trait</th><th>Trade-off</th></tr></thead>
+        <tbody>
+          <tr><td>Graphite (natural / synthetic)</td><td>Baseline (~372 mAh/g theoretical)</td><td>Stable, mature</td><td>Lower energy ceiling</td></tr>
+          <tr><td>Silicon</td><td>~10× graphite</td><td>Very high capacity</td><td>~300% volume expansion → cracks</td></tr>
+          <tr><td>Silicon-carbon composite</td><td>Higher than graphite</td><td>Blended (5–15% Si)</td><td>Compromise stability</td></tr>
+          <tr><td>LTO (Li₄Ti₅O₁₂)</td><td>Lower</td><td>Fast charge, very long cycle life</td><td>Lower energy, higher voltage</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Why silicon is a promise with a catch</h2>
+      <p>
+        Silicon can hold roughly ten times more lithium than graphite, but it swells dramatically as it charges and
+        contracts on discharge. That volume change fractures the material and destroys the electrode — which is why
+        commercial cells use <strong>silicon-carbon composites</strong> (a little silicon blended into graphite) rather
+        than pure silicon anodes.
+      </p>
+
+      <h2>The SEI lives here</h2>
+      <p>
+        The <strong>solid electrolyte interphase (SEI)</strong> — the thin passivating layer that forms on first charge
+        — grows on the anode. It is protective but slowly consumes lithium over time, which is a major driver of
+        <a href="https://worldbatteryhub.com/lithium/lithium-degradation/">lithium degradation</a>. Anode chemistry
+        therefore shapes both capacity <em>and</em> long-term ageing.
+      </p>
+
+      <h2>World Battery Hub Analysis</h2>
+      <div class="box">
+        <p><strong>Position:</strong> The anode is the quieter half of the battery, but it is where the next big energy
+        jump will come from — if silicon's expansion problem is ever solved commercially.</p>
+        <p><strong>Reasoning:</strong> Cathode chemistry has been the visible battleground, but graphite is nearly
+        tapped out on capacity. Silicon offers the theoretical headroom; the industry is currently buying a little of
+        that headroom at a time through composites rather than betting on pure silicon.</p>
+        <p class="muted"><em>This is the author's editorial view, not investment or purchasing advice.</em></p>
+      </div>
+
+      <h2>Sources</h2>
+      <ul>
+        <li>Peer-reviewed literature on graphite, silicon and LTO anode materials.</li>
+        <li>Cell manufacturer technical references (CATL, Panasonic, LG).</li>
+        <li>Cross-verified with the <a href="/lithium-electrolyte-separator/">electrolyte &amp; separator</a> and SEI references.</li>
+      </ul>
+
+      <p class="muted">Return to <a href="https://technology.worldbatteryhub.com">Battery Technology Reference</a> · <a href="https://worldbatteryhub.com">World Battery Hub</a>. Informational, not purchasing advice.</p>
+    </div>
+  </body>
+</html>

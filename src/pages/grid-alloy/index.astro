@@ -1,0 +1,86 @@
+---
+const SITE = 'https://technology.worldbatteryhub.com';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Grid Alloy: Lead-Calcium vs Lead-Antimony vs Lead-Tin | World Battery Hub</title>
+    <meta name="description" content="The lead-acid grid is a lead alloy, not pure lead. Lead-calcium makes maintenance-free batteries, lead-antimony makes deep-cycle batteries, and tin improves casting and corrosion. Here is what each alloy trades off." />
+    <link rel="canonical" href={`${SITE}/grid-alloy/`} />
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 0; color: #1e293b; line-height: 1.6; }
+      .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+      h1, h2 { color: #0f1f3d; }
+      a { color: #1d4ed8; }
+      .muted { color: #64748b; font-size: 0.85rem; }
+      .box { background: #eff6ff; border-left: 4px solid #1d4ed8; padding: 12px 16px; margin: 14px 0; }
+      table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+      th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #e5e9f0; }
+      th { color: #0f1f3d; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Grid Alloy: Lead-Calcium vs Lead-Antimony vs Lead-Tin</h1>
+      <p class="muted">Battery Technology Reference · Last reviewed 2026-09-16</p>
+
+      <div class="box">
+        <strong>Direct answer:</strong> A lead-acid grid is not pure lead — it is a <strong>lead alloy</strong>, and the
+        alloying element decides the battery's character. <strong>Lead–calcium</strong> enables maintenance-free
+        (sealed) batteries; <strong>lead–antimony</strong> gives deep-cycle strength at the cost of gassing; and
+        <strong>tin</strong> is the additive that improves castability and corrosion resistance.
+      </div>
+
+      <h2>The alloys compared</h2>
+      <table>
+        <thead><tr><th>Alloy</th><th>Water loss / gassing</th><th>Deep-cycle strength</th><th>Typical use</th></tr></thead>
+        <tbody>
+          <tr><td>Lead–calcium (Pb–Ca)</td><td>Low → maintenance-free</td><td>Moderate</td><td>SLI, AGM, start-stop</td></tr>
+          <tr><td>Lead–antimony (Pb–Sb)</td><td>Higher → needs venting/top-up</td><td>High</td><td>Deep-cycle, traction, industrial</td></tr>
+          <tr><td>Lead–tin (Pb–Sn, additive)</td><td>Neutral</td><td>Neutral</td><td>Castability + corrosion aid, used with the above</td></tr>
+        </tbody>
+      </table>
+
+      <h2>What each alloying element does</h2>
+      <ul>
+        <li><strong>Calcium</strong> — suppresses hydrogen gassing and self-discharge, which is what lets a battery be
+        sealed (valve-regulated) and never need topping up. The trade-off: calcium grids can be more prone to
+        <a href="/lead-acid-aging/">grid corrosion/passivation</a> under deep cycling.</li>
+        <li><strong>Antimony</strong> — strengthens the grid and improves deep-cycle endurance, but it catalyses more
+        gassing, so antimonial batteries are flooded and topped up, not sealed.</li>
+        <li><strong>Tin</strong> — added in small amounts to improve the fluidity of the molten alloy during casting
+        and to raise corrosion resistance of the grid.</li>
+      </ul>
+
+      <h2>Why the alloy is a design decision</h2>
+      <p>
+        The grid alloy is where "maintenance-free vs deep-cycle" is decided at the metal level, before a single plate
+        is pasted. The same cell chemistry behaves differently — gassing, corrosion, cycle life — purely because of
+        what the grid is alloyed with. See <a href="/plate-grid-design/">plate &amp; grid design</a> for how this
+        interacts with plate geometry.
+      </p>
+
+      <h2>World Battery Hub Analysis</h2>
+      <div class="box">
+        <p><strong>Position:</strong> The grid alloy is the quietest but most consequential material choice in a
+        lead-acid battery — it is where "maintenance-free" and "deep-cycle" stop being marketing words and become
+        metallurgy.</p>
+        <p><strong>Reasoning:</strong> Calcium and antimony pull the same battery in opposite directions on gassing and
+        cycling. Understanding that single trade-off explains most of why a start battery and a deep-cycle battery
+        are built differently.</p>
+        <p class="muted"><em>This is the author's editorial view, not a purchasing guarantee.</em></p>
+      </div>
+
+      <h2>Sources</h2>
+      <ul>
+        <li>Battery Council International (BCI) — grid alloy and lead-acid metallurgy references.</li>
+        <li>Manufacturer technical literature (Varta, Exide, EnerSys) — Pb-Ca vs Pb-Sb grid behaviour.</li>
+      </ul>
+
+      <p class="muted">Return to <a href="https://technology.worldbatteryhub.com">Battery Technology Reference</a> · <a href="https://worldbatteryhub.com">World Battery Hub</a>. Informational, not purchasing advice.</p>
+    </div>
+  </body>
+</html>
