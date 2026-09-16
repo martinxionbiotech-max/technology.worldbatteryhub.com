@@ -69,6 +69,16 @@ const SITE = 'https://technology.worldbatteryhub.com';
   <li>What are the protection trip thresholds and response times?</li>
   <li>How is SOC estimated, and how often does it recalibrate?</li>
       </ul>
+      <h2>The SOC estimation methods</h2>
+      <table>
+        <thead><tr><th>Method</th><th>How it works</th><th>Weakness</th></tr></thead>
+        <tbody>
+          <tr><td>Voltage lookup</td><td>Reads the OCV-to-SOC curve</td><td>Flat curves (LFP) make it rough</td></tr>
+          <tr><td>Coulomb counting</td><td>Integrates current in/out</td><td>Drift accumulates — needs recalibration</td></tr>
+          <tr><td>Model-based (Kalman)</td><td>Fuses voltage + current + model</td><td>Complexity and compute</td></tr>
+        </tbody>
+      </table>
+
 
 
       <h2>What This Means</h2>
