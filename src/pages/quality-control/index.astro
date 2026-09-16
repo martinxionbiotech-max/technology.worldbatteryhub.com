@@ -1,0 +1,87 @@
+---
+const SITE = 'https://technology.worldbatteryhub.com';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Battery Quality Control | World Battery Hub</title>
+    <meta name="description" content="Battery quality control — the in-process and final testing that turns a manufacturing recipe into a consistent product. Formation grading, leak checks and the QC gates." />
+    <link rel="canonical" href={`${SITE}/quality-control/`} />
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 0; color: #1e293b; line-height: 1.6; }
+      .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+      h1, h2 { color: #0f1f3d; }
+      a { color: #1d4ed8; }
+      .muted { color: #64748b; font-size: 0.85rem; }
+      .box { background: #eff6ff; border-left: 4px solid #1d4ed8; padding: 12px 16px; margin: 14px 0; }
+      table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+      th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #e5e9f0; }
+      th { color: #0f1f3d; width: 32%; }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Battery Quality Control</h1>
+      <p class="muted">Battery Technology Reference · Manufacturing · Last reviewed 2026-09-16</p>
+
+      <div class="box">
+        <strong>Direct answer:</strong> Battery quality control is the test-and-sort system that turns a
+        manufacturing recipe into a <strong>consistent product</strong>. The core gates: <strong>in-process
+        checks</strong> (paste density, coating weight), <strong>formation and grading</strong> (the first charge,
+        then sorting cells by capacity and resistance), <strong>leak and electrical tests</strong> at assembly, and
+        <strong>batch audits</strong> against the spec. QC is what separates two factories running the same design.
+      </div>
+
+      <h2>The QC gates</h2>
+      <table>
+        <thead><tr><th>Gate</th><th>What it checks</th></tr></thead>
+        <tbody>
+          <tr><td><strong>In-process</strong></td><td>Paste density, coating weight, plate/cell dimensions</td></tr>
+          <tr><td><strong>Formation &amp; grading</strong></td><td>First-charge profile; capacity and resistance sorting</td></tr>
+          <tr><td><strong>Assembly tests</strong></td><td>Leak checks, OCV, CCA/high-rate spot tests</td></tr>
+          <tr><td><strong>Batch audit</strong></td><td>Sample testing against the full specification</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Why consistency is the product</h2>
+      <p>
+        The chemistry is fixed; the <strong>variance is not</strong>. Two identical designs diverge through paste
+        density, curing time and formation profiles — small drifts that become big differences in capacity and
+        life. QC's job is to catch those drifts at the gate where they occur, not at the customer
+        (see <a href="/lead-acid-manufacturing/">lead-acid manufacturing</a> and
+        <a href="/lithium-manufacturing/">lithium manufacturing</a> for where the drifts hide).
+      </p>
+
+      <h2>Grading: where lithium differs most</h2>
+      <p>
+        Lithium adds a step lead-acid does not need at the same intensity: <strong>grading</strong>. After formation
+        and aging, every cell is tested and <strong>sorted by capacity and internal resistance</strong> so packs are
+        built from matched cells — the factory-side answer to
+        <a href="/cell-balancing/">balancing</a>, reducing the imbalance the BMS must later manage. The grading data
+        also feeds the warranty decision: cells that fail the sort never reach a pack.
+      </p>
+
+      <h2>The Author's Take</h2>
+      <div class="box">
+        <p><strong>Position:</strong> In batteries, quality control is the product — the chemistry is a solved recipe,
+        and the difference between brands is the consistency the QC system enforces, which is why manufacturing
+        audits reveal more than any datasheet.</p>
+        <p><strong>Reasoning:</strong> The failure a buyer meets in year three was usually a variance a QC gate missed
+        in week one. Understanding where the gates sit — paste, formation, grading, leak test — explains why
+        consistency costs, and why the cheapest supplier is often the one with the widest variance.</p>
+        <p class="muted"><em>This is the author's editorial view, not a purchasing guarantee.</em></p>
+      </div>
+
+      <h2>Sources</h2>
+      <ul>
+        <li>Manufacturer quality documentation — in-process and final test gates.</li>
+        <li>Battery engineering references — formation grading and statistical process control.</li>
+      </ul>
+
+      <p class="muted">Return to <a href="https://technology.worldbatteryhub.com">Battery Technology Reference</a> · <a href="https://worldbatteryhub.com">World Battery Hub</a>. Informational, not purchasing advice.</p>
+    </div>
+  </body>
+</html>
