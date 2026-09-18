@@ -1,0 +1,88 @@
+---
+const SITE = 'https://technology.worldbatteryhub.com';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Graphite Anode | World Battery Hub</title>
+    <meta name="description" content="Graphite is the standard lithium-ion anode — it stores lithium ions between its layers at ~372 mAh/g. Why graphite won, and how silicon and LTO challenge it." />
+    <link rel="canonical" href={`${SITE}/graphite-anode/`} />
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 0; color: #1e293b; line-height: 1.6; }
+      .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+      h1, h2 { color: #0f1f3d; }
+      a { color: #1d4ed8; }
+      .muted { color: #64748b; font-size: 0.85rem; }
+      .box { background: #eff6ff; border-left: 4px solid #1d4ed8; padding: 12px 16px; margin: 14px 0; }
+      table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+      th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #e5e9f0; }
+      th { color: #0f1f3d; }
+    </style>
+    <script type="application/ld+json" set:html={"{\"@context\": \"https://schema.org\", \"@type\": \"WebPage\", \"@id\": \"https://technology.worldbatteryhub.com/graphite-anode/\", \"url\": \"https://technology.worldbatteryhub.com/graphite-anode/\", \"name\": \"Graphite Anode\", \"publisher\": {\"@id\": \"https://worldbatteryhub.com/#organization\"}, \"isPartOf\": {\"@id\": \"https://technology.worldbatteryhub.com/\"}}"} />
+    <script type="application/ld+json" set:html={"{\"@context\": \"https://schema.org\", \"@type\": \"TechArticle\", \"@id\": \"https://technology.worldbatteryhub.com/graphite-anode/#article\", \"headline\": \"Graphite Anode\", \"url\": \"https://technology.worldbatteryhub.com/graphite-anode/\", \"about\": \"Graphite lithium-ion anode\", \"publisher\": {\"@id\": \"https://worldbatteryhub.com/#organization\"}}"} />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Graphite Anode</h1>
+      <p class="muted">Battery Technology Reference · Lithium anode · Last reviewed 2026-09-18</p>
+
+      <div class="box">
+        <strong>Direct answer:</strong> <strong>Graphite</strong> is the standard lithium-ion <strong>anode</strong>. It
+        stores lithium ions <strong>between its carbon layers</strong> during charge, offering a theoretical capacity of
+        <strong>~372&nbsp;mAh/g</strong> at a low, flat voltage — the combination of low cost, stability and long cycle
+        life that has made it the default since the 1990s.
+      </div>
+
+      <h2>How graphite stores lithium</h2>
+      <p>
+        Graphite is stacked sheets of carbon. During charge, lithium ions slip <strong>between the sheets</strong> — a
+        process called <strong>intercalation</strong> — and settle at one lithium per six carbon atoms (LiC₆), which is
+        where the ~372&nbsp;mAh/g limit comes from. The ions go in and out without the anode breaking apart, which is
+        why graphite cells survive thousands of cycles.
+      </p>
+
+      <h2>Natural vs synthetic graphite</h2>
+      <table>
+        <thead><tr><th></th><th>Natural graphite</th><th>Synthetic graphite</th></tr></thead>
+        <tbody>
+          <tr><td>Source</td><td>Mined, purified</td><td>Made from petroleum coke at high temperature</td></tr>
+          <tr><td>Cost</td><td>Lower</td><td>Higher</td></tr>
+          <tr><td>Consistency</td><td>More variable</td><td>More uniform</td></tr>
+          <tr><td>Typical use</td><td>Energy cells</td><td>Power and high-end cells</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Why graphite faces challengers</h2>
+      <p>
+        Two challengers push at graphite's limits. <strong>Silicon</strong> stores roughly <strong>ten times</strong> the
+        lithium per gram (raising energy density) but swells dramatically on charge, so it is used as a small
+        <strong>additive</strong> to graphite rather than a replacement — see
+        <a href="https://worldbatteryhub.com/lithium/silicon-anode-batteries/">silicon anode batteries</a>.
+        <strong>LTO</strong> (lithium titanate) replaces graphite entirely for ultra-fast charge and extreme cycle life,
+        at the cost of lower voltage and energy density. Graphite remains the default because its whole package —
+        cost, stability, life — is still hard to beat.
+      </p>
+
+      <h2>Our Read</h2>
+      <div class="box">
+        <p><strong>My take:</strong> Graphite is the invisible workhorse of the lithium age — everyone compares
+        cathodes, but the anode that made lithium-ion possible is the same cheap, stable carbon in almost every cell.</p>
+        <p><strong>Why:</strong> The cathode sets the voltage and the headline; the anode sets the durability and
+        fast-charge ceiling. Graphite's ~372&nbsp;mAh/g is a hard limit that the whole silicon race is trying to lift —
+        which is exactly why the anode is now the more active frontier than the cathode.</p>
+        <p class="muted"><em>My view as an editor, not a purchasing guarantee.</em></p>
+      </div>
+
+      <h2>Sources</h2>
+      <ul>
+        <li>Battery engineering references — graphite intercalation and anode capacity.</li>
+        <li>Cell-manufacturer documentation — graphite and silicon-composite anodes.</li>
+      </ul>
+
+      <p class="muted">Return to <a href="/anode-materials/">Anode materials</a> · <a href="https://technology.worldbatteryhub.com">Battery Technology Reference</a> · <a href="https://worldbatteryhub.com/methodology/">Methodology</a>. Informational, not purchasing advice.</p>
+    </div>
+  </body>
+</html>

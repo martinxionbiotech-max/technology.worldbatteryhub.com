@@ -1,0 +1,97 @@
+---
+const SITE = 'https://technology.worldbatteryhub.com';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LMFP Cathode (Lithium Manganese Iron Phosphate) | World Battery Hub</title>
+    <meta name="description" content="LMFP adds manganese to the LFP structure to raise its voltage and energy density while keeping LFP's safety and cycle life — the cobalt-free cathode upgrade." />
+    <link rel="canonical" href={`${SITE}/lmfp-cathode/`} />
+    <style>
+      body { font-family: system-ui, sans-serif; margin: 0; color: #1e293b; line-height: 1.6; }
+      .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+      h1, h2 { color: #0f1f3d; }
+      a { color: #1d4ed8; }
+      .muted { color: #64748b; font-size: 0.85rem; }
+      .box { background: #eff6ff; border-left: 4px solid #1d4ed8; padding: 12px 16px; margin: 14px 0; }
+      table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+      th, td { text-align: left; padding: 8px 10px; border-bottom: 1px solid #e5e9f0; }
+      th { color: #0f1f3d; }
+    </style>
+    <script type="application/ld+json" set:html={"{\"@context\": \"https://schema.org\", \"@type\": \"WebPage\", \"@id\": \"https://technology.worldbatteryhub.com/lmfp-cathode/\", \"url\": \"https://technology.worldbatteryhub.com/lmfp-cathode/\", \"name\": \"LMFP Cathode\", \"publisher\": {\"@id\": \"https://worldbatteryhub.com/#organization\"}, \"isPartOf\": {\"@id\": \"https://technology.worldbatteryhub.com/\"}}"} />
+    <script type="application/ld+json" set:html={"{\"@context\": \"https://schema.org\", \"@type\": \"TechArticle\", \"@id\": \"https://technology.worldbatteryhub.com/lmfp-cathode/#article\", \"headline\": \"LMFP Cathode\", \"url\": \"https://technology.worldbatteryhub.com/lmfp-cathode/\", \"about\": \"LMFP lithium manganese iron phosphate cathode\", \"publisher\": {\"@id\": \"https://worldbatteryhub.com/#organization\"}}"} />
+  </head>
+  <body>
+    <div class="container">
+      <h1>LMFP Cathode</h1>
+      <p class="muted">Battery Technology Reference · Lithium cathode · Last reviewed 2026-09-18</p>
+
+      <div class="box">
+        <strong>Direct answer:</strong> <strong>LMFP</strong> (lithium manganese iron phosphate) is LFP with
+        <strong>manganese</strong> substituted for part of the iron. The manganese <strong>raises the cell's voltage</strong>
+        from LFP's ~3.2&nbsp;V toward ~3.5&nbsp;V, lifting <strong>energy density by roughly 10–20%</strong> — while
+        keeping LFP's defining virtues: no cobalt or nickel, strong thermal stability and long cycle life.
+      </div>
+
+      <h2>Why manganese raises the voltage</h2>
+      <p>
+        Both LFP and LMFP share the olivine crystal structure, but the manganese redox couple operates at a higher
+        voltage than iron. The result is a cathode that stores more energy per kilogram than LFP at only a modest cost
+        premium, with no cobalt and no nickel — a "cobalt-free energy upgrade" for the mainstream lithium family.
+      </p>
+
+      <h2>LMFP vs LFP vs NMC</h2>
+      <table>
+        <thead><tr><th>Cathode</th><th>Nominal voltage</th><th>Energy density</th><th>Character</th></tr></thead>
+        <tbody>
+          <tr><td><strong>LFP</strong></td><td>~3.2 V</td><td>Lower</td><td>Safest, longest cycle life, no cobalt</td></tr>
+          <tr><td><strong>LMFP</strong></td><td>~3.5 V</td><td>Mid (10–20% above LFP)</td><td>LFP's safety with a voltage lift, no cobalt</td></tr>
+          <tr><td><strong>NMC</strong></td><td>~3.7 V</td><td>Higher</td><td>More energy, nickel + cobalt cost and risk</td></tr>
+        </tbody>
+      </table>
+      <p class="muted">
+        Values are typical cell-level figures — see the
+        <a href="https://worldbatteryhub.com/lithium/lfp-vs-nmc-vs-lto/">LFP vs NMC vs LTO</a> comparison for the full trade-off.
+      </p>
+
+      <h2>The honest trade-off</h2>
+      <p>
+        LMFP's voltage lift comes with a known engineering cost: manganese can <strong>dissolve</strong> into the
+        electrolyte under repeated cycling, which historically limited its cycle life relative to pure LFP. Modern
+        formulations suppress this with coatings and electrolyte additives, which is why LMFP has moved from lab to
+        commercial cells only recently. It is best understood as LFP's energy-density stretch, not a replacement for
+        NMC at the high-energy end.
+      </p>
+
+      <h2>Where LMFP fits</h2>
+      <p>
+        LMFP targets the middle of the lithium market: <strong>mid-range EVs</strong> and
+        <strong>stationary storage</strong> that want more energy than LFP without paying for nickel and cobalt. It
+        competes directly with low-nickel NMC and with LFP's next generation, and is being scaled by major Chinese
+        cell makers alongside LFP.
+      </p>
+
+      <h2>Our Read</h2>
+      <div class="box">
+        <p><strong>My take:</strong> LMFP is the quiet compromise of the cathode family — it borrows NMC's energy
+        ambition without borrowing its cobalt, and pays for it with a harder cycle-life engineering problem than pure
+        LFP.</p>
+        <p><strong>Why:</strong> The manganese lift is real but conditional: it only holds where the dissolution
+        problem is managed. As a buyer, treat LMFP as "LFP-plus," not "NMC-lite" — the safety and longevity come from
+        the phosphate side, and the energy comes from a trade-off that still needs care.</p>
+        <p class="muted"><em>My view as an editor, not a purchasing guarantee.</em></p>
+      </div>
+
+      <h2>Sources</h2>
+      <ul>
+        <li>Cell-manufacturer documentation — LMFP cathode cells and chemistry.</li>
+        <li>Battery engineering references — cathode voltage and manganese dissolution.</li>
+      </ul>
+
+      <p class="muted">Return to <a href="/cathode-materials/">Cathode materials</a> · <a href="https://technology.worldbatteryhub.com">Battery Technology Reference</a> · <a href="https://worldbatteryhub.com/methodology/">Methodology</a>. Informational, not purchasing advice.</p>
+    </div>
+  </body>
+</html>
