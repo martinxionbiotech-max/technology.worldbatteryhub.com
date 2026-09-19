@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://technology.worldbatteryhub.com/sitemap-index.xml
