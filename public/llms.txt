@@ -1,0 +1,44 @@
+# World Battery Hub — Technology
+
+> Battery technology reference — materials, manufacturing processes, BMS and thermal management, and recycling technology. Sub-site of the World Battery Hub family.
+
+## Core Pages
+
+- [Home](https://technology.worldbatteryhub.com/): Entry point to the battery technology reference.
+- [Battery Materials](https://technology.worldbatteryhub.com/battery-materials/): Battery materials overview.
+- [Anode Materials](https://technology.worldbatteryhub.com/anode-materials/): Anode material technologies.
+- [Cathode Materials](https://technology.worldbatteryhub.com/cathode-materials/): Cathode material technologies.
+- [Graphite Anode](https://technology.worldbatteryhub.com/graphite-anode/): Graphite anode technology.
+- [LCO Cathode](https://technology.worldbatteryhub.com/lco-cathode/): Lithium cobalt oxide cathode.
+- [LMFP Cathode](https://technology.worldbatteryhub.com/lmfp-cathode/): Lithium manganese iron phosphate cathode.
+- [Electrolyte & Separator](https://technology.worldbatteryhub.com/lithium-electrolyte-separator/): Electrolyte and separator technologies.
+- [Electrolyte Additives](https://technology.worldbatteryhub.com/electrolyte-additives/): Electrolyte additive chemistries.
+- [Separator & Electrolyte](https://technology.worldbatteryhub.com/separator-electrolyte/): Separator and electrolyte functions.
+- [Lead-Acid Manufacturing](https://technology.worldbatteryhub.com/lead-acid-manufacturing/): Lead-acid manufacturing process.
+- [Lead Oxide](https://technology.worldbatteryhub.com/lead-oxide/): Lead oxide production.
+- [Grid Alloy](https://technology.worldbatteryhub.com/grid-alloy/): Grid alloy metallurgy.
+- [Plate & Grid Design](https://technology.worldbatteryhub.com/plate-grid-design/): Plate and grid design.
+- [Formation Charging](https://technology.worldbatteryhub.com/formation-charging/): Formation charging process.
+- [Electrode Process](https://technology.worldbatteryhub.com/electrode-process/): Electrode fabrication process.
+- [VRLA](https://technology.worldbatteryhub.com/vrla/): Valve-regulated lead-acid technology.
+- [Gel Battery Technology](https://technology.worldbatteryhub.com/gel-battery-technology/): Gel battery technology.
+- [Electrolyte Specific Gravity](https://technology.worldbatteryhub.com/electrolyte-specific-gravity/): Specific gravity measurement.
+- [Lead-Acid Aging](https://technology.worldbatteryhub.com/lead-acid-aging/): Lead-acid aging mechanisms.
+- [Lithium Manufacturing](https://technology.worldbatteryhub.com/lithium-manufacturing/): Lithium battery manufacturing.
+- [Lithium Cell / Module / Pack](https://technology.worldbatteryhub.com/lithium-cell-module-pack/): Cell, module, and pack assembly.
+- [Lithium Cathode & Anode](https://technology.worldbatteryhub.com/lithium-cathode-anode/): Lithium cathode/anode overview.
+- [Lithium BMS Technology](https://technology.worldbatteryhub.com/lithium-bms-technology/): Battery management systems.
+- [Cell Balancing](https://technology.worldbatteryhub.com/cell-balancing/): Cell balancing methods.
+- [Lithium Thermal Management](https://technology.worldbatteryhub.com/lithium-thermal-management/): Thermal management systems.
+- [Pack Design](https://technology.worldbatteryhub.com/pack-design/): Battery pack design.
+- [Quality Control](https://technology.worldbatteryhub.com/quality-control/): Battery manufacturing QC.
+- [Failure Modes](https://technology.worldbatteryhub.com/failure-modes/): Battery failure modes.
+- [Battery Recycling Technology](https://technology.worldbatteryhub.com/battery-recycling-technology/): Recycling technology.
+
+## Main site
+
+- [World Battery Hub](https://worldbatteryhub.com/): Main knowledge hub (guides, tools, glossary, methodology).
+
+## Notes
+
+- Technical content is educational reference material, not engineering or design guidance for production; validate against standards and datasheets.
