@@ -1,0 +1,26 @@
+---
+const SITE='https://technology.worldbatteryhub.com';
+const items=[
+ ['Battery materials map','/battery-materials/','Both chemistries and their material inputs'],
+ ['Electrode process','/electrode-process/','Coating, drying, calendering and slitting'],
+ ['Quality control','/quality-control/','What a factory QC record should contain'],
+ ['Lead-acid manufacturing','/lead-acid-manufacturing/','Oxide, pasting, curing and formation'],
+ ['Lithium manufacturing','/lithium-manufacturing/','Coating to formation and aging'],
+ ['Recycling technology','/battery-recycling-technology/','Pyro- and hydrometallurgical routes'],
+];
+---
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Battery Materials & Manufacturing — Process and Quality</title>
+<meta name="description" content="Battery materials and manufacturing cluster: material inputs, electrode processing, lead-acid and lithium production, quality control and recycling technology."/>
+<link rel="canonical" href={`${SITE}/materials-manufacturing/`}/>
+<style>body{font-family:system-ui,sans-serif;margin:0;color:#1e293b;line-height:1.6}.container{max-width:900px;margin:0 auto;padding:20px}h1,h2{color:#0f1f3d}a{color:#1d4ed8}.muted{color:#64748b;font-size:.85rem}table{width:100%;border-collapse:collapse;font-size:.95rem}th,td{text-align:left;padding:8px 10px;border-bottom:1px solid #e5e9f0;vertical-align:top}</style>
+<script type="application/ld+json">{`{"@context":"https://schema.org","@type":"CollectionPage","url":"${SITE}/materials-manufacturing/","name":"Battery Materials & Manufacturing","isPartOf":{"@id":"${SITE}/"}}`}</script>
+</head><body><div class="container">
+<p class="muted"><a href="/">Technology</a> › Materials & manufacturing</p>
+<h1>Battery materials &amp; manufacturing</h1>
+<p>The inputs, the process and the evidence: how material choice becomes a battery, and what a factory record should prove.</p>
+<table><thead><tr><th>Topic</th><th>What it covers</th></tr></thead><tbody>
+{items.map(([n,h,d])=>(<tr><td><a href={h}>{n}</a></td><td>{d}</td></tr>))}
+</tbody></table>
+<p class="muted">Related: <a href="/lead-acid-technology/">Lead-acid technology</a> · <a href="/lithium-technology/">Lithium-ion technology</a> · <a href="https://worldbatteryhub.com/procurement/">Procurement hub</a></p>
+</div></body></html>

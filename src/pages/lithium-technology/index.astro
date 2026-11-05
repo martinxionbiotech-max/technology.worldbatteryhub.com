@@ -1,0 +1,34 @@
+---
+const SITE='https://technology.worldbatteryhub.com';
+const items=[
+ ['Cathode & anode','/lithium-cathode-anode/','LFP/NMC/NCA cathodes and graphite/silicon anodes'],
+ ['Cathode materials','/cathode-materials/','NMC, NCA, LFP and the cobalt question'],
+ ['Anode materials','/anode-materials/','Graphite, silicon and the trade-offs'],
+ ['Graphite anode','/graphite-anode/','Natural vs synthetic graphite and performance'],
+ ['LCO cathode','/lco-cathode/','Lithium cobalt oxide and its niche'],
+ ['LMFP cathode','/lmfp-cathode/','Manganese-doped LFP and energy density'],
+ ['Electrolyte & separator','/lithium-electrolyte-separator/','Salt, solvent, separator and safety'],
+ ['BMS technology','/lithium-bms-technology/','Sensing, protection and state estimation'],
+ ['Cell balancing','/cell-balancing/','Passive vs active balancing'],
+ ['Thermal management','/lithium-thermal-management/','Cooling, heating and runaway propagation'],
+ ['Cell, module, pack','/lithium-cell-module-pack/','How cells become a pack'],
+ ['Pack design','/pack-design/','Mechanical, electrical and service design'],
+ ['Lithium manufacturing','/lithium-manufacturing/','Electrode coating to formation'],
+ ['Electrode process','/electrode-process/','Coating, drying, calendering and slitting'],
+];
+---
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Lithium-Ion Technology — Cathodes, Anodes, BMS & Thermal</title>
+<meta name="description" content="Lithium-ion technology cluster: cathode and anode materials, electrolyte and separator, BMS, cell balancing, thermal management, pack design and manufacturing."/>
+<link rel="canonical" href={`${SITE}/lithium-technology/`}/>
+<style>body{font-family:system-ui,sans-serif;margin:0;color:#1e293b;line-height:1.6}.container{max-width:900px;margin:0 auto;padding:20px}h1,h2{color:#0f1f3d}a{color:#1d4ed8}.muted{color:#64748b;font-size:.85rem}table{width:100%;border-collapse:collapse;font-size:.95rem}th,td{text-align:left;padding:8px 10px;border-bottom:1px solid #e5e9f0;vertical-align:top}</style>
+<script type="application/ld+json">{`{"@context":"https://schema.org","@type":"CollectionPage","url":"${SITE}/lithium-technology/","name":"Lithium-Ion Technology","isPartOf":{"@id":"${SITE}/"}}`}</script>
+</head><body><div class="container">
+<p class="muted"><a href="/">Technology</a> › Lithium-ion</p>
+<h1>Lithium-ion technology</h1>
+<p>From cathode chemistry to pack design: the components, the control electronics and the thermal behaviour that decide performance and safety.</p>
+<table><thead><tr><th>Topic</th><th>What it covers</th></tr></thead><tbody>
+{items.map(([n,h,d])=>(<tr><td><a href={h}>{n}</a></td><td>{d}</td></tr>))}
+</tbody></table>
+<p class="muted">Related: <a href="/lead-acid-technology/">Lead-acid technology</a> · <a href="/materials-manufacturing/">Materials & manufacturing</a> · <a href="https://worldbatteryhub.com/lithium/">Lithium application hub</a></p>
+</div></body></html>

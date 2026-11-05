@@ -1,0 +1,34 @@
+---
+const SITE='https://technology.worldbatteryhub.com';
+const items=[
+ ['Plate & grid design','/plate-grid-design/','Grid alloy, plate thickness and the CCA-versus-cycle-life trade-off'],
+ ['Lead oxide','/lead-oxide/','The active material: PbO to PbO₂ and spongy lead'],
+ ['Grid alloy','/grid-alloy/','Pb-Ca vs Pb-Sb vs Pb-Sn metallurgy'],
+ ['Separator & electrolyte','/separator-electrolyte/','Isolation, acid density and AGM glass mat'],
+ ['Electrolyte specific gravity','/electrolyte-specific-gravity/','Hydrometer readings as a direct state-of-charge signal'],
+ ['Electrolyte additives','/electrolyte-additives/','Carbon and other additives and what they change'],
+ ['Formation & charging','/formation-charging/','The first charge and the formation profile'],
+ ['Failure modes','/failure-modes/','Sulfation, corrosion, water loss and stratification'],
+ ['Lead-acid aging','/lead-acid-aging/','How the capacity and resistance move over life'],
+ ['VRLA','/vrla/','Valve-regulated lead-acid: AGM and gel'],
+ ['Gel battery technology','/gel-battery-technology/','Silica-gelled electrolyte and its behaviour'],
+ ['Lead-acid manufacturing','/lead-acid-manufacturing/','From oxide to formed battery'],
+ ['Quality control','/quality-control/','What a factory QC record should contain'],
+ ['Battery materials map','/battery-materials/','Both chemistries side by side'],
+];
+---
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Lead-Acid Technology — Plates, Grids, Electrolyte & Aging</title>
+<meta name="description" content="Lead-acid technology cluster: plate and grid design, lead oxide, grid alloys, separator and electrolyte, formation, failure modes, VRLA, gel and aging."/>
+<link rel="canonical" href={`${SITE}/lead-acid-technology/`}/>
+<style>body{font-family:system-ui,sans-serif;margin:0;color:#1e293b;line-height:1.6}.container{max-width:900px;margin:0 auto;padding:20px}h1,h2{color:#0f1f3d}a{color:#1d4ed8}.muted{color:#64748b;font-size:.85rem}table{width:100%;border-collapse:collapse;font-size:.95rem}th,td{text-align:left;padding:8px 10px;border-bottom:1px solid #e5e9f0;vertical-align:top}</style>
+<script type="application/ld+json">{`{"@context":"https://schema.org","@type":"CollectionPage","url":"${SITE}/lead-acid-technology/","name":"Lead-Acid Technology","isPartOf":{"@id":"${SITE}/"}}`}</script>
+</head><body><div class="container">
+<p class="muted"><a href="/">Technology</a> › Lead-acid</p>
+<h1>Lead-acid technology</h1>
+<p>How a lead-acid battery is built and why it ages: plates, grids, electrolyte, formation and the failure modes that decide service life.</p>
+<table><thead><tr><th>Topic</th><th>What it covers</th></tr></thead><tbody>
+{items.map(([n,h,d])=>(<tr><td><a href={h}>{n}</a></td><td>{d}</td></tr>))}
+</tbody></table>
+<p class="muted">Related: <a href="/lithium-technology/">Lithium-ion technology</a> · <a href="/materials-manufacturing/">Materials & manufacturing</a> · <a href="https://worldbatteryhub.com/lead-acid/">Lead-acid application hub</a></p>
+</div></body></html>
