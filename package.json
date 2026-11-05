@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build && SITE_URL=https://technology.worldbatteryhub.com SITE_NAME=\"World Battery Hub — Technology\" SITE_DESC=\"Battery technology reference: lead-acid, lithium-ion, chemistries, construction and performance trade-offs.\" node ../scripts/postbuild.mjs && node ../scripts/generate-markdown.mjs",
+    "build": "astro build && SITE_URL=https://technology.worldbatteryhub.com SITE_NAME=\"World Battery Hub — Technology\" SITE_DESC=\"Battery technology reference: lead-acid, lithium-ion, chemistries, construction and performance trade-offs.\" OG_IMAGE=https://technology.worldbatteryhub.com/images/og.webp node ../scripts/postbuild.mjs && node ../scripts/generate-markdown.mjs",
     "preview": "astro preview",
     "astro": "astro"
   },

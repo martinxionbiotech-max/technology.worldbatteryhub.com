@@ -22,6 +22,7 @@ const SITE = 'https://technology.worldbatteryhub.com';
   
     <script type="application/ld+json" set:html={"{\"@context\": \"https://schema.org\", \"@type\": \"WebPage\", \"@id\": \"https://technology.worldbatteryhub.com/\", \"url\": \"https://technology.worldbatteryhub.com/\", \"name\": \"Battery Technology Reference\", \"publisher\": {\"@id\": \"https://worldbatteryhub.com/#organization\"}, \"isPartOf\": {\"@id\": \"https://technology.worldbatteryhub.com/\"}}"} />
     <script type="application/ld+json" set:html={"{\"@context\": \"https://schema.org\", \"@type\": \"BreadcrumbList\", \"itemListElement\": [{\"@type\": \"ListItem\", \"position\": 1, \"name\": \"Technology\", \"item\": \"https://technology.worldbatteryhub.com/\"}, {\"@type\": \"ListItem\", \"position\": 2, \"name\": \"Battery Technology Reference\", \"item\": \"https://technology.worldbatteryhub.com/\"}]}"} />
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Which chemistry should I choose?", "acceptedAnswer": {"@type": "Answer", "text": "Start from the duty cycle, temperature and weight budget. Lead-acid is cost-effective for stationary and cranking duty; lithium is lighter and more cycle-tolerant but needs management electronics."}}, {"@type": "Question", "name": "Is lithium always better?", "acceptedAnswer": {"@type": "Answer", "text": "No. Upfront cost, safety engineering and end-of-life handling can make lead-acid the better choice for stationary or low-cycle applications."}}, {"@type": "Question", "name": "How do I compare cycle life?", "acceptedAnswer": {"@type": "Answer", "text": "Compare at the same depth of discharge, temperature and end-of-life criterion. A cycle count without those conditions is not comparable."}}]}</script>
   </head>
   <body>
     <div class="container">
@@ -96,5 +97,12 @@ const SITE = 'https://technology.worldbatteryhub.com';
 
       <p class="muted">Return to <a href="https://worldbatteryhub.com">World Battery Hub</a>. Content is researched from public sources and cross-verified; it is informational, not purchasing advice.</p>
     </div>
+      <h2>Frequently asked questions</h2>
+      <h3>Which chemistry should I choose?</h3>
+      <p>Start from the duty cycle, temperature and weight budget. Lead-acid is cost-effective for stationary and cranking duty; lithium is lighter and more cycle-tolerant but needs management electronics.</p>
+      <h3>Is lithium always better?</h3>
+      <p>No. Upfront cost, safety engineering and end-of-life handling can make lead-acid the better choice for stationary or low-cycle applications.</p>
+      <h3>How do I compare cycle life?</h3>
+      <p>Compare at the same depth of discharge, temperature and end-of-life criterion. A cycle count without those conditions is not comparable.</p>
   </body>
 </html>
