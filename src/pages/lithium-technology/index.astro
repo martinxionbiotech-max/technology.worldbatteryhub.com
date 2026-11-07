@@ -23,12 +23,32 @@ const items=[
 <link rel="canonical" href={`${SITE}/lithium-technology/`}/>
 <style>body{font-family:system-ui,sans-serif;margin:0;color:#1e293b;line-height:1.6}.container{max-width:900px;margin:0 auto;padding:20px}h1,h2{color:#0f1f3d}a{color:#1d4ed8}.muted{color:#64748b;font-size:.85rem}table{width:100%;border-collapse:collapse;font-size:.95rem}th,td{text-align:left;padding:8px 10px;border-bottom:1px solid #e5e9f0;vertical-align:top}</style>
 <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"CollectionPage","url":"${SITE}/lithium-technology/","name":"Lithium-Ion Technology","isPartOf":{"@id":"${SITE}/"}}`}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Which chemistry should I start with?", "acceptedAnswer": {"@type": "Answer", "text": "Start with the duty cycle and the temperature window. LFP is the default for stationary and cost-sensitive cycling; NMC is chosen when energy density or cold performance matters more than cycle life; LTO is a niche for high power and very low temperature."}}, {"@type": "Question", "name": "Do I need a BMS for a small pack?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Every lithium pack needs cell-level protection against overcharge, over-discharge and over-temperature. A small pack can use a simpler BMS, but it cannot safely omit one."}}]}</script>
 </head><body><div class="container">
 <p class="muted"><a href="/">Technology</a> › Lithium-ion</p>
 <h1>Lithium-ion technology</h1>
 <p>From cathode chemistry to pack design: the components, the control electronics and the thermal behaviour that decide performance and safety.</p>
+<h2>How to use this cluster</h2>
+<p>Read the cluster in the order a pack is designed: chemistry first, then cell format, then thermal behaviour, then the BMS. Changing chemistry after the pack architecture is fixed is expensive, and changing the BMS after the enclosure is fixed is worse. The articles below follow that sequence and cross-link when a decision in one layer constrains another.</p>
+<h2>The four decisions in a lithium pack</h2>
+<ul>
+<li><strong>Chemistry.</strong> LFP favours cycle life and safety; NMC favours energy density; LTO favours power and low-temperature behaviour at a cost in energy. The chemistry sets the voltage window and the thermal risk.</li>
+<li><strong>Cell format.</strong> Prismatic cells simplify packing; cylindrical cells are mature and cost-effective; pouch cells save space but need mechanical support. The format drives the assembly process and the failure mode.</li>
+<li><strong>Thermal design.</strong> Air cooling is adequate at low C-rates; liquid cooling is needed for fast charge and high ambient temperature. The thermal path decides how long the pack lasts, not just how safe it is.</li>
+<li><strong>BMS.</strong> Passive balancing is sufficient for well-matched cells; active balancing helps large or second-life packs. The BMS must speak the protocol of the charger and inverter around it.</li>
+</ul>
+<h2>What this cluster does not cover</h2>
+<p>Certification, transport rules and application sizing are separate clusters. Use the safety and transport pillar for UN38.3 and modal rules, the applications hub for duty-cycle fit, and the testing site for the standards behind a performance claim.</p>
+
 <table><thead><tr><th>Topic</th><th>What it covers</th></tr></thead><tbody>
 {items.map(([n,h,d])=>(<tr><td><a href={h}>{n}</a></td><td>{d}</td></tr>))}
 </tbody></table>
+<h2>Where the cost sits</h2>
+<p>The cell is the largest cost, but the BMS, thermal hardware and enclosure decide whether the pack survives. A cheaper cell with an undersized BMS is not a cheaper pack; it is a shorter-lived one. Compare the bill of materials, not only the cell price.</p>
 <p class="muted">Related: <a href="/lead-acid-technology/">Lead-acid technology</a> · <a href="/materials-manufacturing/">Materials & manufacturing</a> · <a href="https://worldbatteryhub.com/lithium/">Lithium application hub</a></p>
+<h2>Frequently asked questions</h2>
+<h3>Which chemistry should I start with?</h3>
+<p>Start with the duty cycle and the temperature window. LFP is the default for stationary and cost-sensitive cycling; NMC is chosen when energy density or cold performance matters more than cycle life; LTO is a niche for high power and very low temperature.</p>
+<h3>Do I need a BMS for a small pack?</h3>
+<p>Yes. Every lithium pack needs cell-level protection against overcharge, over-discharge and over-temperature. A small pack can use a simpler BMS, but it cannot safely omit one.</p>
 </div></body></html>

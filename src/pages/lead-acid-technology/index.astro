@@ -23,12 +23,31 @@ const items=[
 <link rel="canonical" href={`${SITE}/lead-acid-technology/`}/>
 <style>body{font-family:system-ui,sans-serif;margin:0;color:#1e293b;line-height:1.6}.container{max-width:900px;margin:0 auto;padding:20px}h1,h2{color:#0f1f3d}a{color:#1d4ed8}.muted{color:#64748b;font-size:.85rem}table{width:100%;border-collapse:collapse;font-size:.95rem}th,td{text-align:left;padding:8px 10px;border-bottom:1px solid #e5e9f0;vertical-align:top}</style>
 <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"CollectionPage","url":"${SITE}/lead-acid-technology/","name":"Lead-Acid Technology","isPartOf":{"@id":"${SITE}/"}}`}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Which article should I read first?", "acceptedAnswer": {"@type": "Answer", "text": "Start with failure modes if you are diagnosing a returned battery; start with plate and grid design if you are specifying a new product. Both paths link to the electrolyte and formation articles when you need the process detail."}}, {"@type": "Question", "name": "Why does grid alloy matter?", "acceptedAnswer": {"@type": "Answer", "text": "The alloy sets the corrosion rate, water-loss behaviour and deep-cycle tolerance. A calcium alloy is not automatically better than antimony; it is better for low-maintenance float duty, while antimony is more forgiving in repeated deep cycling."}}]}</script>
 </head><body><div class="container">
 <p class="muted"><a href="/">Technology</a> › Lead-acid</p>
 <h1>Lead-acid technology</h1>
 <p>How a lead-acid battery is built and why it ages: plates, grids, electrolyte, formation and the failure modes that decide service life.</p>
+<h2>How to use this cluster</h2>
+<p>Start from the failure you are trying to prevent, not from the component name. Capacity loss points to sulfation, aging or a charging problem; water loss points to overcharge or a hot environment; grid corrosion points to alloy and service life. Each article below is written to connect a symptom to a design or maintenance cause, so the cluster works as a diagnostic path rather than a glossary.</p>
+<h2>The three trade-offs that decide a lead-acid design</h2>
+<ul>
+<li><strong>CCA versus cycle life.</strong> Thin plates expose more surface area and deliver high cold-cranking current, but they corrode faster. Thick plates trade cranking performance for deep-cycle endurance.</li>
+<li><strong>Pb-Ca versus Pb-Sb.</strong> Calcium alloys reduce water loss and maintenance; antimony alloys tolerate deeper cycling and are more forgiving of overcharge. The choice is a maintenance strategy, not a quality ranking.</li>
+<li><strong>VRLA versus flooded.</strong> Valve-regulated designs are maintenance-free and spill-resistant but less tolerant of heat and overcharge; flooded designs need watering but survive abuse better in stationary duty.</li>
+</ul>
+<h2>What this cluster does not cover</h2>
+<p>Application sizing, group-size selection, wholesale pricing and test standards live in their own clusters. Use the application hub for duty-cycle fit, the data site for dimensions and CCA by group, and the testing site for the standards that govern a performance claim.</p>
+
 <table><thead><tr><th>Topic</th><th>What it covers</th></tr></thead><tbody>
 {items.map(([n,h,d])=>(<tr><td><a href={h}>{n}</a></td><td>{d}</td></tr>))}
 </tbody></table>
+<h2>A note on service life</h2>
+<p>Manufacturers quote life in cycles or years, but the number depends on depth of discharge, temperature and charging. Two batteries with the same label can differ by a factor of two in service if one is cycled at 30% depth and the other at 70%. Ask for the cycle-life basis before comparing products.</p>
 <p class="muted">Related: <a href="/lithium-technology/">Lithium-ion technology</a> · <a href="/materials-manufacturing/">Materials & manufacturing</a> · <a href="https://worldbatteryhub.com/lead-acid/">Lead-acid application hub</a></p>
+<h2>Frequently asked questions</h2>
+<h3>Which article should I read first?</h3>
+<p>Start with failure modes if you are diagnosing a returned battery; start with plate and grid design if you are specifying a new product. Both paths link to the electrolyte and formation articles when you need the process detail.</p>
+<h3>Why does grid alloy matter?</h3>
+<p>The alloy sets the corrosion rate, water-loss behaviour and deep-cycle tolerance. A calcium alloy is not automatically better than antimony; it is better for low-maintenance float duty, while antimony is more forgiving in repeated deep cycling.</p>
 </div></body></html>

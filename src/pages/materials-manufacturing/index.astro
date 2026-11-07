@@ -15,12 +15,36 @@ const items=[
 <link rel="canonical" href={`${SITE}/materials-manufacturing/`}/>
 <style>body{font-family:system-ui,sans-serif;margin:0;color:#1e293b;line-height:1.6}.container{max-width:900px;margin:0 auto;padding:20px}h1,h2{color:#0f1f3d}a{color:#1d4ed8}.muted{color:#64748b;font-size:.85rem}table{width:100%;border-collapse:collapse;font-size:.95rem}th,td{text-align:left;padding:8px 10px;border-bottom:1px solid #e5e9f0;vertical-align:top}</style>
 <script type="application/ld+json">{`{"@context":"https://schema.org","@type":"CollectionPage","url":"${SITE}/materials-manufacturing/","name":"Battery Materials & Manufacturing","isPartOf":{"@id":"${SITE}/"}}`}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What is the most common manufacturing defect?", "acceptedAnswer": {"@type": "Answer", "text": "Inconsistent coating weight and poor weld or tab quality are the most common causes of early failure. Both are visible in process data before they reach the customer, which is why the intermediate QC record matters more than the final pass rate."}}, {"@type": "Question", "name": "Does a higher purity material always give a better battery?", "acceptedAnswer": {"@type": "Answer", "text": "No. Purity matters, but particle size, morphology and the matching of cathode, anode and electrolyte determine performance. A high-purity material in a poorly matched design can underperform a well-matched standard material."}}]}</script>
 </head><body><div class="container">
 <p class="muted"><a href="/">Technology</a> › Materials & manufacturing</p>
 <h1>Battery materials &amp; manufacturing</h1>
 <p>The inputs, the process and the evidence: how material choice becomes a battery, and what a factory record should prove.</p>
+<h2>How material choice becomes performance</h2>
+<p>The cathode sets the energy and the cost; the anode sets the charge rate and the cycle life; the electrolyte and separator set the safety window. A change in one material rarely improves every metric at once, which is why a supplier's "new formula" claim should be read as a trade-off, not a free gain. The articles below follow the material from incoming inspection to the formed cell.</p>
+<h2>What a factory QC record should prove</h2>
+<ul>
+<li>Incoming material identity and lot, with a COA that matches the material actually consumed.</li>
+<li>Coating weight and thickness within the stated tolerance, measured on the production line.</li>
+<li>Calendering density and electrode dimensions, because both change the cell's power and energy balance.</li>
+<li>Formation and aging data, including the cells that failed and how they were dispositioned.</li>
+<li>End-of-line capacity, resistance and self-discharge, traceable to the cell serial number.</li>
+</ul>
+<p>A record that lists only the final pass rate cannot explain a field failure. The value is in the intermediate measurements and the traceability between them.</p>
+<h2>Where to go next</h2>
+<p>Use the lead-acid or lithium technology cluster for the component-level explanation, the testing site for the standards that verify a claim, and the market site for the material price context behind a quotation.</p>
+
 <table><thead><tr><th>Topic</th><th>What it covers</th></tr></thead><tbody>
 {items.map(([n,h,d])=>(<tr><td><a href={h}>{n}</a></td><td>{d}</td></tr>))}
 </tbody></table>
+<h2>Reading a process change</h2>
+<p>When a supplier changes a material, a coating parameter or a formation step, the effect appears in the end-of-line distribution before it appears in the field. Ask for the process change notice, the affected lots and the before/after test data. A change that is not documented is a change you cannot audit.</p>
+<h2>The limits of a certificate</h2>
+<p>A quality certificate covers the system, not the shipment. The batch COA covers the sample, not every cell. The only evidence that the shipment matches the sample is the traceability record between them — lot numbers, process parameters and end-of-line data. That is why the intermediate QC record is the most useful document a buyer can request.</p>
 <p class="muted">Related: <a href="/lead-acid-technology/">Lead-acid technology</a> · <a href="/lithium-technology/">Lithium-ion technology</a> · <a href="https://worldbatteryhub.com/procurement/">Procurement hub</a></p>
+<h2>Frequently asked questions</h2>
+<h3>What is the most common manufacturing defect?</h3>
+<p>Inconsistent coating weight and poor weld or tab quality are the most common causes of early failure. Both are visible in process data before they reach the customer, which is why the intermediate QC record matters more than the final pass rate.</p>
+<h3>Does a higher purity material always give a better battery?</h3>
+<p>No. Purity matters, but particle size, morphology and the matching of cathode, anode and electrolyte determine performance. A high-purity material in a poorly matched design can underperform a well-matched standard material.</p>
 </div></body></html>
